@@ -1,0 +1,1193 @@
+{
+    "questions": [{
+            "question": "put a strain",
+            "answers": "Yük olmak",
+            "sentence": "The epidemic put a strain on the resources of the hospital.",
+            "sentenceArray": [
+                "The epidemic",
+                "put a strain",
+                "on the resources",
+                "of the hospital."
+            ],
+            "translateArray": [
+                "Salgın",
+                "yük oldu",
+                "kaynaklarına",
+                "hastanenin"
+            ],
+            "correctTranslate": [0, 3, 2, 1]
+        },
+        {
+            "question": "gain insight into",
+            "answers": "İç yüzünü anlamak",
+            "sentence": "We often read novels in an attempt to gain insights into the human experience.",
+            "sentenceArray": [
+                "We often read novels ",
+                "in an attempt to",
+                "gain insights into",
+                "the human experience."
+            ],
+            "translateArray": [
+                "sık sık roman okuruz",
+                "kazanmak amacıyla",
+                "iç görü",
+                "İnsan deneyimi hakkında"
+            ],
+            "correctTranslate": [3, 2, 1, 0]
+        },
+        {
+            "question": "by no / any means",
+            "answers": "Asla",
+            "sentence": "It's difficult, but by no means impossible.",
+            "sentenceArray": [
+                "It's difficult",
+                "but",
+                "by no means impossible."
+            ],
+            "translateArray": [
+                "O çok zordur",
+                "ama",
+                "asla imkansız değildir."
+            ],
+            "correctTranslate": [0, 1, 2]
+        },
+        {
+            "question": "concise",
+            "answers": "Kısa",
+            "sentence": "Saussure expressed his arguments in a concise and logical way.",
+            "sentenceArray": [
+                "Saussure",
+                "expressed",
+                "his arguments",
+                "in a concise",
+                "and logical way."
+            ],
+            "translateArray": [
+                "Saussure",
+                "ifade etti",
+                "iddialarını",
+                "kısa",
+                "ve mantıklı bir yolla"
+            ],
+            "correctTranslate": [0, 2, 3, 4, 1]
+        },
+        {
+            "question": "onset of something",
+            "answers": "Başlangıcı",
+            "sentence": "Doctors can slow the onset of the disease with drugs.",
+            "sentenceArray": [
+                "Doctors",
+                "can slow",
+                "the onset of the disease",
+                "with drugs."
+            ],
+            "translateArray": [
+                "Doktorlar",
+                "yavaşlatabilir",
+                "hastalığın başlangıcını",
+                "ilaçlar ile"
+            ],
+            "correctTranslate": [0, 2, 3, 1]
+        },
+        {
+            "question": "obsolote",
+            "answers": "İşe yaramaz, kullanım dışı",
+            "sentence": "The phrase was obsolete after 1625",
+            "sentenceArray": [
+                "The phrase ",
+                "was obsolete ",
+                "after 1625"
+            ],
+            "translateArray": [
+                "Bu ifade",
+                "kullanılmıyordu",
+                "1625' den sonra"
+            ],
+            "correctTranslate": [0, 2, 1]
+        },
+        {
+            "question": "alleviate",
+            "answers": "Hafifletmek",
+            "sentence": "You can't cure a common cold, but you can alleviate the symptoms.",
+            "sentenceArray": [
+                "You can't cure",
+                "a common cold,",
+                "but",
+                "you can alleviate",
+                "the symptoms."
+            ],
+            "translateArray": [
+                "tedavi edemezsiniz",
+                "Soğuk algınlığını",
+                "ancak",
+                "hafifletebilirsiniz",
+                "semptomları"
+            ],
+            "correctTranslate": [1, 0, 2, 4, 3]
+        },
+        {
+            "question": "coin a term/phrase",
+            "answers": "Bir ifade icat etmek",
+            "sentence": "The term  'extended phenotype' was first coined in 1978.",
+            "sentenceArray": [
+                "The term  'extended phenotype'",
+                "was first coined",
+                "in 1978."
+            ],
+            "translateArray": [
+                "'Genişletilmiş fenotip' terimi",
+                "ilk ortaya çıktı.",
+                "1978'de"
+            ],
+            "correctTranslate": [0, 2, 1]
+        },
+        {
+            "question": "deprivation",
+            "answers": "Eksikliği",
+            "sentence": "Sleep deprivation can result in mental disorders.",
+            "sentenceArray": [
+                "Sleep deprivation",
+                "can result",
+                "in mental disorders."
+
+            ],
+            "translateArray": [
+                "Uyku azlığı",
+                "sebep olabilir",
+                "ruhsal bozukluklara"
+
+            ],
+            "correctTranslate": [0, 2, 1]
+        },
+        {
+            "question": "socail/political/economic upheaval",
+            "answers":  "çalkantı, karışıklık",
+            "sentence": "The long garbage strike in 1970 caused much political upheaval.",
+            "sentenceArray": [
+                "The long garbage strike",
+                "in 1970",
+                "caused",
+                "much political upheaval."
+            ],
+            "translateArray": [
+                "Uzun çöp grevi",
+                "1970' de",
+                "sebeb oldu",
+                "çok sayıda politik karışıklığa"
+            ],
+            "correctTranslate": [1, 0, 3, 2]
+        },
+        {
+            "question": "achieve",
+            "answers": "başarmak, elde etmek",
+            "sentence": ""
+        },
+        {
+            "question": "stem from",
+            "answers": "...den gelmek, ...den kaynaklanmak",
+            "sentence": ""
+        },
+        {
+            "question": "distortion",
+            "answers": 
+                "çarpıtma",
+               
+            "sentence": ""
+        },
+        {
+            "question": "given that",
+            "answers": 
+                "bakıldığında",
+           
+            "sentence": ""
+        },
+        {
+            "question": "expose to",
+            "answers": 
+                "maruz bırakmak",
+              
+            "sentence": ""
+           
+        },
+        {
+            "question": "impact",
+            "answers": 
+                "etki",
+           
+            "sentence": ""
+        },
+        {
+            "question": "recruitment",
+            "answers": 
+                "işe alma, iyileştirme",
+            
+            "sentence": ""
+        },
+        {
+            "question": "satisfactory",
+            "answers": 
+                "tatmin edici",
+             
+            "sentence": ""
+        },
+        {
+            "question": "mainly",
+            "answers": 
+                "özellikle, başlıca, çoğu",
+          
+            "sentence": ""
+        },
+        {
+            "question": "accustomed to",
+            "answers": 
+                "alışkın, alışmış",
+            
+            "sentence": ""
+        },
+        {
+            "question": "extraordinarily",
+            "answers": [
+                "alışılmadık bir biçimde",
+                "istemsizce",
+                "sürdürülebilir",
+                "gönülsüz bir şekilde"
+            ],
+            "correctIndex": 0,
+            "sentence": "Although some medical remedies were quite sensible, others were extraordinarily weird.",
+            "sentenceArray": [
+                "Although",
+                "some medical remedies",
+                "were quite sensible",
+                "others",
+                "were extraordinarily weird."
+            ],
+            "translateArray": [
+                "Bazı tıbbi çözümler",
+                "oldukça mantıklı",
+                "olsa da ",
+                "diğerleri",
+                "olağanüstü derecede tuhaftı."
+            ],
+            "correctTranslate": [0, 1, 2, 3 , 4]
+        },
+        {
+            "question": "aid",
+            "answers": [
+                "yardımcı olmak",
+                "işaret etmek",
+                "dikkatlice",
+                "ırksal"
+            ],
+            "correctIndex": 0,
+            "sentence": ""
+        },
+        {
+            "question": "cease",
+            "answers": [
+                "durdurmak",
+                "sürüklemek",
+                "kaçmak",
+                "sızmak"
+            ],
+            "correctIndex": 0,
+            "sentence": "They decided to cease financial support.",
+            "sentenceArray": [
+                "They",
+                "decided",
+                "to cease",
+                "financial support."
+            ],
+            "translateArray": [
+                "Onlar",
+                "karar verdi",
+                "durdurmaya ",
+                "mali desteği"
+            ],
+            "correctTranslate": [0, 3, 2, 1]
+        },
+        {
+            "question": "subsidy",
+            "answers": 
+                "para desteği, devlet desteği",
+            
+            "sentence": ""
+        },
+        {
+            "question": "exist",
+            "answers": 
+                "var olmak, bulunmak",
+             
+            "sentence": ""
+        },
+        {
+            "question": "in charge of",
+            "answers": 
+                "sorumlu, yükümlü",
+           
+            "sentence": ""
+        },
+        {
+            "question": "fluently",
+            "answers": 
+                "akıcı bir biçimde",
+             
+            "sentence": ""
+        },
+        {
+            "question": "obvious",
+            "answers": 
+                "açık, besbelli, belirgin",
+            
+            "sentence": " "
+        },
+        {
+            "question": "cope with",
+            "answers": 
+                "ile uğraşmak",
+             
+            "sentence": ""
+        },
+        {
+            "question": "decline",
+            "answers": 
+                "azalmak, düşmek",
+                
+            "sentence": ""
+        },{
+            "question": "turmoil",
+            "answers": 
+                "kargaşa, telaş, hengame",
+               
+            "sentence": ""
+        },
+        {
+            "question": "overcome",
+            "answers": 
+                "üstesinden gelmek, başa çıkmak",
+            
+            "sentence": ""
+        },
+        {
+            "question": "racial",
+            "answers": 
+                "ırksal, ırk",
+               
+            "sentence": ""
+        },
+        {
+            "question": "severely",
+            "answers": 
+                "ağır, şiddetli bir şekilde",
+             
+            "sentence": ""
+        },
+        {
+            "question": "precision",
+            "answers": 
+                "hassasiyet, kesinlik, tamlık",
+                
+            "sentence": ""
+        },
+        {
+            "question": "raise",
+            "answers": 
+                "yükselmek, artırmak, kaldırmak",
+              
+            "sentence": ""
+        },
+        {
+            "question": "inhibit",
+            "answers": 
+                "engellemek, kısıtlamak, yasaklamak",
+            
+            "sentence": ""
+        },
+        {
+            "question": "inspiration",
+            "answers": 
+                "ilham, esin kaynağı",
+              
+            "sentence": ""
+        },
+        {
+            "question": "indicate",
+            "answers": 
+                "belirtmek, göstermek, işaret etmek",
+              
+            "sentence": ""
+        },
+        {
+            "question": "famine",
+            "answers": 
+                "kıtlık, açlık, yokluk",
+              
+            "sentence": ""
+        },
+        {
+            "question": "controversy",
+            "answers": 
+                "tartışma, ihtilaf, anlaşmazlık",
+             
+            "sentence": ""
+        },
+        {
+            "question": "polar",
+            "answers": 
+                "kutup, kutupsal",
+              
+            "sentence": ""
+        },
+        {
+            "question": "extinction",
+            "answers": 
+                "yok olma, nesli tükenme",
+            
+            "sentence": ""
+        },
+        {
+            "question": "vital",
+            "answers": 
+                "hayati, yaşamsal",
+             
+            "sentence": ""
+        },
+        {
+            "question": "skeptic",
+            "answers": 
+                "kuşkucu, şüpheci",
+               
+            "sentence": ""
+        },
+        {
+            "question": "attain",
+            "answers": 
+                "ulaşmak, erişmek",
+            
+            "sentence": ""
+        },
+        {
+            "question": "crude",
+            "answers": 
+                "ham, işlenmemiş",
+             
+            "sentence": ""
+        },
+        {
+            "question": "aim",
+            "answers": 
+                "hedeflemek, amaçlamak",
+         
+            "sentence": ""
+        },
+        {
+            "question": "substance",
+            "answers": 
+                "madde, cisim, esas, içerik",
+             
+            "sentence": ""
+        },
+        {
+            "question": "benefit",
+            "answers": 
+                "kazanç, yarar, fayda",
+             
+            "sentence": ""
+        },{
+            "question": "absolute",
+            "answers": 
+                "kesin, salt, mutlak",
+        
+            "sentence": ""
+        },
+        {
+            "question": "worthless",
+            "answers": 
+                "değersiz, beş para etmez",
+         
+            "sentence": ""
+        },
+        {
+            "question": "decade",
+            "answers": 
+                "onyıl, onluk",
+             
+            "sentence": ""
+        },
+        {
+            "question": "demise",
+            "answers": 
+                "feragat, devretme",
+           
+            "sentence": ""
+        },
+        {
+            "question": "various",
+            "answers": 
+                "çeşitli, birçok",
+              
+            "sentence": ""
+        },
+        {
+            "question": "brutal",
+            "answers": 
+                "acımasız, vahşi, zalim",
+           
+            "sentence": ""
+        },
+        {
+            "question": "sort",
+            "answers": 
+                "tür, çeşit, sınıf",
+           
+            "sentence": ""
+        },
+        {
+            "question": "debate",
+            "answers": 
+                "tartışma, çekişmek",
+            
+            "sentence": ""
+        },
+        {
+            "question": "disaster",
+            "answers": 
+                "afet, felaket",
+          
+            "sentence": ""
+        },
+        {
+            "question": "indeed",
+            "answers": 
+                "aslında, gerçekten",
+            
+            "sentence": ""
+        },
+        {
+            "question": "considerably",
+            "answers": 
+                "önemli ölçüde, dikkate değer şekilde",
+             
+            "sentence": ""
+            
+        },
+        {
+            "question": "attract",
+            "answers": 
+                "çekmek, cezbetmek",
+          
+            "sentence": ""
+           
+        },
+        {
+            "question": "adequately",
+            "answers": 
+                "layıkıyla, yeterli olarak",
+               
+            "sentence": ""
+           
+        },
+        {
+            "question": "claim",
+            "answers": 
+                "iddia etmek, istemek, talep etmek",
+             
+            "sentence": ""
+            
+        },
+        {
+            "question": "sharply",
+            "answers": 
+                "ciddi derecede, şiddetli",
+       
+            "sentence": ""
+           
+        },
+        {
+            "question": "assessment",
+            "answers": 
+                "değerlendirme",
+              
+            "sentence": ""
+            
+        },
+        {
+            "question": "rougly",
+            "answers": 
+                "kabaca, aşağı yukarı",
+          
+            "sentence": ""
+        }, 
+        {
+            "question": "collisional",
+            "answers": 
+                "Çarpışma",
+             
+            "sentence": ""
+           
+        },
+        {
+            "question": "fundamental",
+            "answers": 
+                "temel, ana, esas",
+              
+            "sentence": ""
+           
+        },
+        {
+            "question": "separate",
+            "answers": 
+                "ayırmak, ayırt etmek",
+             
+            "sentence": ""
+            
+        },
+        {
+            "question": "necessarily",
+            "answers": 
+                "şart, zorunlu olarak",
+           
+            "sentence": ""
+        },
+        {
+            "question": "plague",
+            "answers": 
+                "bela olmak, cezalandırmak",
+                
+            "sentence": ""
+        },
+        {
+            "question": "deal",
+            "answers": 
+                "anlaşma, davranış",
+             
+            "sentence": ""
+        },
+        {
+            "question": "invader",
+            "answers": 
+                "istilacı, saldırgan",
+           
+            "sentence": ""
+        },
+        {
+            "question": "defend",
+            "answers": 
+                "savunmak, korumak ",
+               
+            "sentence": ""
+        },
+        {
+            "question": "attemp to",
+            "answers": 
+                "denemek, girişimde bulunmak",
+               
+            "sentence": ""
+        },
+        {
+            "question": "labour",
+            "answers": 
+                "emek, iş gücü",
+        
+            "sentence": ""
+        },
+        {
+            "question": "cater",
+            "answers": 
+                "sağlamak, temin etmek",
+            
+            "sentence": ""
+        },
+        {
+            "question": "sight",
+            "answers": 
+                "görme, görüş",
+            
+            "sentence": ""
+        },
+        {
+            "question": "preserve",
+            "answers": 
+                "korumak, muhafaza etmek",
+             
+            "sentence": ""
+        },
+        {
+            "question": "foresee",
+            "answers": 
+                "ileriyi görmek, önceden görmek",
+             
+            "sentence": ""
+           
+        },
+        {
+            "question": "steam",
+            "answers": 
+                "buhar",
+               
+            "sentence": ""
+        },
+        {
+            "question": "sketch",
+            "answers": 
+                "taslak çizmek",
+                
+            "sentence": ""
+        },
+        {
+            "question": "span",
+            "answers": 
+                "germek, gerilmek, içermek, kapsamak",
+           
+            "sentence": ""
+        },
+        {
+            "question": "hold on",
+            "answers": 
+                "beklemek, durmak",
+         
+            "sentence": ""
+        },
+        {
+            "question": "profoundly",
+            "answers": 
+                "derinden",
+            
+            "sentence": ""
+        },
+        {
+            "question": "go through",
+            "answers": 
+                "geçirmek",
+           
+            "sentence": ""
+        },
+        {
+            "question": "peculiar",
+            "answers": 
+                "tuhaf",
+             
+            "sentence": ""
+        },
+        {
+            "question": "excessive",
+            "answers": 
+                "aşırı",
+              
+            "sentence": ""
+        },
+        {
+            "question": "enforce",
+            "answers": 
+                "icra etmek",
+              
+            "sentence": ""
+        },
+        {
+            "question": "protect",
+            "answers": 
+                "korumak",
+            
+            "sentence": ""
+            
+        },
+        {
+            "question": "recklessly",
+            "answers": 
+                "dikkatsizce",
+               
+            "sentence": ""
+            
+        },
+        {
+            "question": "arbitrarily",
+            "answers": 
+                "rastgele",
+               
+            "sentence": ""
+           
+        },
+        {
+            "question": "contradiction",
+            "answers": 
+                "çelişki",
+               
+            "sentence": ""
+           
+        },
+        {
+            "question": "allocation",
+            "answers": 
+                "tahsis",
+            
+            "sentence": ""
+           
+        },
+        {
+            "question": "take on",
+            "answers": 
+                "üstlenmek",
+          
+            "sentence": ""
+           
+        },
+        {
+            "question": "turn down",
+            "answers": 
+                "reddetmek",
+           
+            "sentence": ""
+           
+        },
+        {
+            "question": "decently",
+            "answers": 
+                "doğru dürüst",
+               
+            "sentence": ""
+            
+        },
+        {
+            "question": "deprivation",
+            "answers": 
+                "yoksunluk",
+            
+            "sentence": ""
+            
+        },
+        {
+            "question": "jeopardise",
+            "answers": 
+                "tehlikeye atmak",
+           
+            "sentence": ""
+            
+        },
+        {
+            "question": "represent (v)",
+            "answers": 
+                "temsil etmek, göstermek, simgelemek",
+         
+            "sentence": ""
+           
+        },
+        {
+            "question": "preferably (adv)",
+            "answers": 
+                "tercihen",
+            
+            "sentence": ""
+            
+        },
+        {
+            "question": "predictable (adj)",
+            "answers": 
+                "tahmin edilebilir",
+            
+            "sentence": ""
+           
+        },
+        {
+            "question": "credibility (n)",
+            "answers": 
+                "güvenirlik",
+        
+            "sentence": ""
+          
+        },
+        {
+            "question": "persist (v)",
+            "answers": 
+                "ısrar etmek",
+               
+            "sentence": ""
+           
+        },
+        {
+            "question": "regression (n)",
+            "answers": 
+                "gerileme, daralma",
+             
+            "sentence": ""
+           
+        },
+        {
+            "question": "exploit (v)",
+            "answers": 
+                "kullanmak, sömürmek",
+            
+            "sentence": ""
+           
+        },
+        {
+            "question": "suspiciously (adv)",
+            "answers": 
+                "şüphe ile, şüpheli şekilde",
+                
+            "sentence": ""
+           
+        },
+        {
+            "question": "intensive (adj)",
+            "answers": 
+                "yoğun",
+            
+            "sentence": ""
+           
+        },
+        {
+            "question": "similar (adj)",
+            "answers": 
+                "benzer",
+              
+            "sentence": ""
+           
+        },
+        {
+            "question": "invest (v)",
+            "answers": "yatırım yapmak",
+            "sentence": ""
+        },
+        {
+            "question": "discrepancy (n)",
+            "answers": "farklılık, fark",
+            "sentence": ""
+        },
+        {
+            "question": "obstinately (adv)",
+            "answers": "inatçı şekilde",
+            "sentence": ""
+        },
+        {
+            "question": "efficient (adj) ",
+            "answers": "verimli, etkili",
+            "sentence": ""
+        },
+        {
+            "question": "deteriorate (v) ",
+            "answers": "kötüleşmek",
+            "sentence": ""
+        },
+        {
+            "question": "suspend (v)",
+            "answers": "askıya almak, ertelemek",
+            "sentence": ""
+        },
+        {
+            "question": "occur (v)",
+            "answers": "olmak, meydana gelmek",
+            "sentence": ""
+        },
+        {
+            "question": "vigorous (adj)",
+            "answers": "enerjik, gayretli",
+            "sentence": ""
+        },
+        {
+            "question": "preservation (n)",
+            "answers": "muhafaza, koruma",
+            "sentence": ""
+        },
+        {
+            "question": "deter (v)",
+            "answers": "caydırmak, vazgeçirmek",
+            "sentence": ""
+        },
+        {
+            "question": "sufficiently (adv)",
+            "answers": "yeterli şekilde",
+            "sentence": ""
+        },
+        {
+            "question": "disturbance (n)",
+            "answers": "müdahale",
+            "sentence": ""
+        },
+        {
+            "question": "pretentious (adj)",
+            "answers": "kendini begenmis, gösterişçi",
+            "sentence": ""
+        },
+        {
+            "question": "objectively (adv)",
+            "answers": "nesnel şekilde, tarafsız biçimde",
+            "sentence": ""
+        },
+        {
+            "question": "artifact (n)",
+            "answers": "insan yapımı",
+            "sentence": ""
+        },
+        {
+            "question": "unavoidable (adj) ",
+            "answers": "kaçınılmaz ",
+            "sentence": ""
+        },
+        {
+            "question": "contribute (v) ",
+            "answers": "katkıda bulunmak, yol açmak ",
+            "sentence": ""
+        },
+        {
+            "question": "inference (n) ",
+            "answers": "sonuç çıkarma ",
+            "sentence": ""
+        },
+        {
+            "question": "isolation (n) ",
+            "answers": "yabancılaşma, yabancılaştırma, ayırma ",
+            "sentence": ""
+        },
+        {
+            "question": "participate (v) ",
+            "answers": "katılmak ",
+            "sentence": ""
+        },
+        {
+            "question": "solely (adv) ",
+            "answers": "sadece ",
+            "sentence": ""
+        },
+        {
+            "question": "uneasy (adj) ",
+            "answers": "tedirgin, huzursuz, endişeli, kaygılı ",
+            "sentence": ""
+        },
+        {
+            "question": "evaluation (n) ",
+            "answers": "değerlendirme ",
+            "sentence": ""
+        },
+        {
+            "question": "deceptive (adj) ",
+            "answers": "aldatıcı, yanıltıcı ",
+            "sentence": ""
+        },
+        {
+            "question": "prevail (v) ",
+            "answers": "hüküm sürmek, etkin olmak",
+            "sentence": ""
+        },
+        {
+            "question": "acquire (v) ",
+            "answers": "elde etmek ",
+            "sentence": ""
+        },
+        {
+            "question": "advance (v) ",
+            "answers": "ilerlemek, gelişmek ",
+            "sentence": ""
+        },
+        {
+            "question": "convenient (adj) ",
+            "answers": "uygun ",
+            "sentence": ""
+        },
+        {
+            "question": "exclusion (n) ",
+            "answers": "hariç tutma, dışında bırakma, ihraç ",
+            "sentence": ""
+        },
+        {
+            "question": "drill (n) ",
+            "answers": "egzersiz, delik ",
+            "sentence": ""
+        },
+        {
+            "question": "rebuke (v) ",
+            "answers": "azarlamak ",
+            "sentence": ""
+        },
+        {
+            "question": "confide (v) ",
+            "answers": "güvenmek ",
+            "sentence": ""
+        },
+        {
+            "question": "assertively (adv) ",
+            "answers": "kendine güvenen ve agresif biçimde ",
+            "sentence": ""
+        },
+        {
+            "question": "occasionally (adv) ",
+            "answers": "ara sıra, zaman zaman ",
+            "sentence": ""
+        },
+        {
+            "question": "alternation (n) ",
+            "answers": "birbirini izleme, değişim ",
+            "sentence": ""
+        },
+        {
+            "question": "demand (v) ",
+            "answers": "talep etmek, istemek ",
+            "sentence": ""
+        },
+        {
+            "question": "dismissal (n) ",
+            "answers": "işten çıkartma, reddetme ",
+            "sentence": ""
+        },
+        {
+            "question": "patient (n) ",
+            "answers": "hasta ",
+            "sentence": ""
+        },
+        {
+            "question": "untamed (adj) ",
+            "answers": "vahşi ",
+            "sentence": ""
+        },
+        {
+            "question": "extraction (n) ",
+            "answers": "çıkartma ",
+            "sentence": ""
+        },
+        {
+            "question": " ",
+            "answers": " ",
+            "sentence": ""
+        },
+        {
+            "question": " ",
+            "answers": " ",
+            "sentence": ""
+        },
+        {
+            "question": " ",
+            "answers": " ",
+            "sentence": ""
+        },
+        {
+            "question": " ",
+            "answers": " ",
+            "sentence": ""
+        },
+        {
+            "question": " ",
+            "answers": " ",
+            "sentence": ""
+        },  
+        {
+            "question": "force ",
+            "answers": "kuvvet, zorlamak ",
+            "sentence": ""
+        },
+        {
+            "question": "therefore ",
+            "answers": "bu yüzden ",
+            "sentence": ""
+        },
+        {
+            "question": "accessible ",
+            "answers": "erişilebilir ",
+            "sentence": ""
+        },
+        {
+            "question": "connection ",
+            "answers": "bağlantı ",
+            "sentence": ""
+        }
+
+        
+    ]
+}

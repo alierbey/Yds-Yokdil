@@ -1,0 +1,1425 @@
+{
+    "questions": [{
+     
+
+        
+            "question": "To intake",
+            "answers": "almak, içeri almak ",
+            "sentence": ""
+        },
+        {
+            "question": "To receive ",
+            "answers": "almak",
+            "sentence": ""
+        },
+        {
+            "question": "İnstrument ",
+            "answers": "alet, araç ",
+            "sentence": ""
+        },
+        {
+            "question": "Unlike ",
+            "answers": "aksine, farklı olarak ",
+            "sentence": ""
+        },
+        {
+            "question": "Otherwise ",
+            "answers": "aksi takdirde ",
+            "sentence": ""
+        },
+        {
+            "question": "To flow ",
+            "answers": "akmak, süzülmek ",
+            "sentence": ""
+        },
+        {
+            "question": "Current ",
+            "answers": "akım, geçerli, çağdaş ",
+            "sentence": ""
+        },
+        {
+            "question": "Lung ",
+            "answers": "akciğer ",
+            "sentence": ""
+        },
+        {
+            "question": "Painless ",
+            "answers": "ağrısız ",
+            "sentence": ""
+        },
+        {
+            "question": "Painful ",
+            "answers": "ağrılı ",
+            "sentence": ""
+        },
+        {
+            "question": "Pain ",
+            "answers": "ağrı ",
+            "sentence": ""
+        },
+        {
+            "question": "Fasting ",
+            "answers": "aç olma ",
+            "sentence": ""
+        },
+        {
+            "question": "Hungry ",
+            "answers": "aç ",
+            "sentence": ""
+        },
+        {
+            "question": "Emergency ",
+            "answers": "acil ",
+            "sentence": ""
+        },
+        {
+            "question": "Teenager ",
+            "answers": "13-19 yaşları arasında olan ",
+            "sentence": ""
+        },
+        {
+            "question": "Abortion ",
+            "answers": "abortus, düşük ",
+            "sentence": ""
+        },
+        {
+            "question": "İntermittent ",
+            "answers": "aralıklı ",
+            "sentence": ""
+        },
+        {
+            "question": "Antibody ",
+            "answers": "antikor ",
+            "sentence": ""
+        },
+        {
+     
+
+        
+            "question": "Antigen ",
+            "answers": "antijen ",
+            "sentence": ""
+        },
+        {
+            "question": "Anemia ",
+            "answers": "anemi, kansızlık ",
+            "sentence": ""
+        },
+        {
+            "question": "Operation ",
+            "answers": "ameliyat ",
+            "sentence": ""
+        },
+        {
+            "question": "Febrile ",
+            "answers": "ateşli, ateşe ait ",
+            "sentence": ""
+        },
+        {
+            "question": "Fever ",
+            "answers": "ateş ",
+            "sentence": ""
+        },
+        {
+            "question": "Overdose ",
+            "answers": "aşırı doz ",
+            "sentence": ""
+        },
+        {
+            "question": "To implant ",
+            "answers": "aşılamak ",
+            "sentence": ""
+        },
+        {
+            "question": "To vaccinate ",
+            "answers": "aşılama ",
+            "sentence": ""
+        },
+        {
+            "question": "Vaccine ",
+            "answers": "aşı ",
+            "sentence": ""
+        },
+        {
+            "question": "Debris ",
+            "answers": "artık madde, yıkıntı ürünü ",
+            "sentence": ""
+        },
+        {
+            "question": "Artery ",
+            "answers": "arter, atar damar ",
+            "sentence": ""
+        },
+        {
+            "question": "Hind ",
+            "answers": "arka, art ",
+            "sentence": ""
+        },
+        {
+            "question": "evidence (n)",
+            "answers": "kanıt, delil",
+            "sentence": ""
+        },
+        {
+            "question": "pump",
+            "answers": "pompalamak",
+            "sentence": ""
+        },
+        {
+            "question": "clot",
+            "answers": "pıhtılaşmak, pıhtı",
+            "sentence": ""
+        },
+        {
+            "question": "dietary",
+            "answers": "perhizle ilgili, perhiz yemeği",
+            "sentence": ""
+        },
+        {
+            "question": "dressing",
+            "answers": "pansuman",
+            "sentence": ""
+        },
+        {
+            "question": "life span",
+            "answers": "ömür",
+            "sentence": ""
+        },
+        {
+            "question": "mortality",
+            "answers": "ölümlülük",
+            "sentence": ""
+        },
+        {
+            "question": "stillborn",
+            "answers": "ölü doğmus",
+            "sentence": ""
+        },
+        {
+            "question": "cough",
+            "answers": "öksürük",
+            "sentence": ""
+        },
+        {
+            "question": "rate",
+            "answers": "oran, hız, gidiş",
+            "sentence": ""
+        },
+        {
+            "question": "spinal cord",
+            "answers": "omurilik",
+            "sentence": ""
+        },
+        {
+            "question": "vertebrate",
+            "answers": "omurgalı",
+            "sentence": ""
+        },
+        {
+            "question": "groove",
+            "answers": "oluk, kanal",
+            "sentence": ""
+        },
+        {
+            "question": "chamber",
+            "answers": "odacık, boşluk",
+            "sentence": ""
+        },
+        {
+            "question": "penetrate",
+            "answers": "nüfuz etmek",
+            "sentence": ""
+        },
+        {
+            "question": "neuron",
+            "answers": "nöron, sinir hücresi",
+            "sentence": ""
+        },
+        {
+            "question": "seizure",
+            "answers": "nöbet, havale",
+            "sentence": ""
+        },
+        {
+            "question": "glottis",
+            "answers": "nefes borusunun ağzı",
+            "sentence": ""
+        },
+        {
+            "question": "inhale",
+            "answers": "nefes almak",
+            "sentence": ""
+        },
+        {
+            "question": "pulse",
+            "answers": "nabız",
+            "sentence": ""
+        },
+        {
+            "question": "factitous",
+            "answers": "mücadeleci, geçimsiz",
+            "sentence": ""
+        },
+        {
+            "question": "absolute",
+            "answers": "mutlak , kesin",
+            "sentence": ""
+        },
+        {
+            "question": "judgement",
+            "answers": "muhakeme",
+            "sentence": ""
+        },
+        {
+            "question": "pattern",
+            "answers": "model, örnek, biçim",
+            "sentence": ""
+        },
+        {
+            "question": "myalgia",
+            "answers": "miyalji, kas ağrısı",
+            "sentence": ""
+        },
+        {
+            "question": "germicide",
+            "answers": "mikrop öldürücü",
+            "sentence": ""
+        },
+        {
+            "question": "stomach upset",
+            "answers": "mide bozukluğu",
+            "sentence": ""
+        },
+        {
+            "question": "to obligate",
+            "answers": "mecbur bırakmak",
+            "sentence": ""
+        },
+        {
+            "question": "exposure",
+            "answers": "maruz kalma",
+            "sentence": ""
+        },
+        {
+            "question": "preserve",
+            "answers": "korumak",
+            "sentence": ""
+        },
+        {
+            "question": "marrow",
+            "answers": "öz, ilik kemiği",
+            "sentence": ""
+        },
+        {
+            "question": "fibre",
+            "answers": "lif",
+            "sentence": ""
+        },
+        {
+            "question": "abortion",
+            "answers": "kürtaj",
+            "sentence": ""
+        },
+        {
+            "question": "vomit",
+            "answers": "kusmak",
+            "sentence": ""
+        },
+        {
+            "question": "relief",
+            "answers": "kurtulma",
+            "sentence": ""
+        },
+        {
+            "question": "deteriorate",
+            "answers": "kötüye gitmek",
+            "sentence": ""
+        },
+        {
+            "question": "stem cell",
+            "answers": "kök hücre",
+            "sentence": ""
+        },
+        {
+            "question": "preservative",
+            "answers": "koruyucu",
+            "sentence": ""
+        },
+        {
+            "question": "speech defect",
+            "answers": "konuşma bozukluğu",
+            "sentence": ""
+        },
+        {
+            "question": "topic",
+            "answers": "konu, mesele",
+            "sentence": ""
+        },
+        {
+            "question": "limb",
+            "answers": "kol veya bacaklardan her biri",
+            "sentence": ""
+        },
+        {
+            "question": "mass vaccination",
+            "answers": "kitlesel aşılama, aşılama kampanyası",
+            "sentence": ""
+        },
+        {
+            "question": "calcification",
+            "answers": "kireçlenme",
+            "sentence": ""
+        },
+        {
+            "question": "scarlet fever",
+            "answers": "kızıl humma hastalığı",
+            "sentence": ""
+        },
+        {
+            "question": "flushing",
+            "answers": "kızarma",
+            "sentence": ""
+        },
+        {
+            "question": "malaise",
+            "answers": "kırgınlık",
+            "sentence": ""
+        },
+        {
+            "question": "capillary",
+            "answers": "kılcal damar",
+            "sentence": ""
+        },
+        {
+            "question": "cartilage",
+            "answers": "kıkırdak",
+            "sentence": ""
+        },
+        {
+            "question": "dejection",
+            "answers": "keyifsizlik",
+            "sentence": ""
+        },
+        {
+            "question": "uncut",
+            "answers": "kesintisiz",
+            "sentence": ""
+        },
+        {
+            "question": "tick",
+            "answers": "kene",
+            "sentence": ""
+        },
+        {
+            "question": "spontaneity",
+            "answers": "kendiliğinden oluş",
+            "sentence": ""
+        },
+        {
+            "question": "bone",
+            "answers": "kemik",
+            "sentence": ""
+        },
+        {
+            "question": "scratch",
+            "answers": "kaşımak",
+            "sentence": ""
+        },
+        {
+            "question": "valve",
+            "answers": "kapakçık",
+            "sentence": ""
+        },
+        {
+            "question": "liver",
+            "answers": "karaciğer",
+            "sentence": ""
+        },
+        {
+            "question": "carcinogenicity",
+            "answers": "kanser yapma eğilimi",
+            "sentence": ""
+        },
+        {
+            "question": "bleed to death",
+            "answers": "kanamadan ölmek",
+            "sentence": ""
+        },
+        {
+            "question": "groove",
+            "answers": "kanal",
+            "sentence": ""
+        },
+        {
+            "question": "congestive",
+            "answers": "kan veya su toplamasıyla ilgili",
+            "sentence": ""
+        },
+        {
+            "question": "heartache",
+            "answers": "kalp krizi",
+            "sentence": ""
+        },
+        {
+            "question": "bowel",
+            "answers": "kalın bağırsak",
+            "sentence": ""
+        },
+        {
+            "question": "beat",
+            "answers": "kalbin atması",
+            "sentence": ""
+        },
+        {
+            "question": "skull",
+            "answers": "kafatası",
+            "sentence": ""
+        },
+        {
+            "question": "abstain from",
+            "answers": "kaçınmak",
+            "sentence": ""
+        },
+        {
+            "question": "as well as",
+            "answers": "kadar",
+            "sentence": ""
+        },
+        {
+            "question": "avert",
+            "answers": "kaçınmak",
+            "sentence": ""
+        },
+        {
+            "question": "blister",
+            "answers": "kabarcık, su toplama",
+            "sentence": ""
+        },
+        {
+            "question": "bubble",
+            "answers": "kabarcık",
+            "sentence": ""
+        },
+        {
+            "question": "mumps",
+            "answers": "kabakulak",
+            "sentence": ""
+        },
+        {
+            "question": "isolated",
+            "answers": "izole, yalnız",
+            "sentence": ""
+        },
+        {
+            "question": "heal",
+            "answers": "iyileşmek",
+            "sentence": ""
+        },
+        {
+            "question": "anorexia",
+            "answers": "iştahsızlık",
+            "sentence": ""
+        },
+        {
+            "question": "appetite",
+            "answers": "iştah",
+            "sentence": ""
+        },
+        {
+            "question": "voluntarily",
+            "answers": "istemli",
+            "sentence": ""
+        },
+        {
+            "question": "skeleton",
+            "answers": "iskelet",
+            "sentence": ""
+        },
+        {
+            "question": "unavoidable",
+            "answers": "kaçınılmaz",
+            "sentence": ""
+        },
+        {
+            "question": "persistant",
+            "answers": "inatçı",
+            "sentence": ""
+        },
+        {
+            "question": "inflammation",
+            "answers": "iltihap",
+            "sentence": ""
+        },
+        {
+            "question": "progressive",
+            "answers": "ilerleyici",
+            "sentence": ""
+        },
+        {
+            "question": "bladder",
+            "answers": "idrar torbası, mesane",
+            "sentence": ""
+        },
+        {
+            "question": "drug",
+            "answers": "ilaç, uyuşturucu",
+            "sentence": ""
+        },
+        {
+            "question": "cognitive",
+            "answers": "idrakla ilgili, öğrenmeye dair",
+            "sentence": ""
+        },
+        {
+            "question": "snore",
+            "answers": "horlamak",
+            "sentence": ""
+        },
+        {
+            "question": "hiccup",
+            "answers": "hıçkırmak",
+            "sentence": ""
+        },
+        {
+            "question": "seizure",
+            "answers": "havale, nöbet",
+            "sentence": ""
+        },
+        {
+            "question": "sedate",
+            "answers": "hastayı operasyon öncesi uyuşturmak",
+            "sentence": ""
+        },
+        {
+            "question": "discharge from",
+            "answers": "hastayı taburcu etmek",
+            "sentence": ""
+        },
+        {
+            "question": "hospitalize",
+            "answers": "hastaneye yatırmak",
+            "sentence": ""
+        },
+        {
+            "question": "bout",
+            "answers": "hastalık nöbeti",
+            "sentence": ""
+        },
+        {
+            "question": "etiologic",
+            "answers": "hastalık nedenleriyle ilgili",
+            "sentence": ""
+        },
+        {
+            "question": "afflict",
+            "answers": "hastalığa yakalanmak",
+            "sentence": ""
+        },
+        {
+            "question": "sick",
+            "answers": "hasta",
+            "sentence": ""
+        },
+        {
+            "question": "particular",
+            "answers": "has, özgü, özel",
+            "sentence": ""
+        },
+        {
+            "question": "pregnant",
+            "answers": "hamile",
+            "sentence": ""
+        },
+        {
+            "question": "memory",
+            "answers": "hafıza",
+            "sentence": ""
+        },
+        {
+            "question": "volume",
+            "answers": "hacim",
+            "sentence": ""
+        },
+        {
+            "question": "tear",
+            "answers": "gözyaşı",
+            "sentence": ""
+        },
+        {
+            "question": "eyeball",
+            "answers": "göz küresi",
+            "sentence": ""
+        },
+        {
+            "question": "shadow",
+            "answers": "gölge",
+            "sentence": ""
+        },
+        {
+            "question": "chest",
+            "answers": "göğüs",
+            "sentence": ""
+        },
+        {
+            "question": "breast",
+            "answers": "göğüs",
+            "sentence": ""
+        },
+        {
+            "question": "notch",
+            "answers": "girinti, çentik",
+            "sentence": ""
+        },
+        {
+            "question": "migratory",
+            "answers": "gezici",
+            "sentence": ""
+        },
+        {
+            "question": "strain",
+            "answers": "germek, gerilim",
+            "sentence": ""
+        },
+        {
+            "question": "to stretch",
+            "answers": "germek, gerginleştirmek",
+            "sentence": ""
+        },
+        {
+            "question": "tensile",
+            "answers": "gerilebilir, gerileyebilme, gerilme",
+            "sentence": ""
+        },
+        {
+            "question": "irreversible",
+            "answers": "geri dönüşsüz",
+            "sentence": ""
+        },
+        {
+            "question": "reversible",
+            "answers": "geri dönüşlü",
+            "sentence": ""
+        },
+        {
+            "question": "superflous",
+            "answers": "gereksiz",
+            "sentence": ""
+        },
+        {
+            "question": "actually",
+            "answers": "gerçekte",
+            "sentence": ""
+        },
+        {
+            "question": "real",
+            "answers": "gerçek",
+            "sentence": ""
+        },
+        {
+            "question": "dilate",
+            "answers": "genişletmek",
+            "sentence": ""
+        },
+        {
+            "question": "juvenile diabetes",
+            "answers": "genellikle çocuklar ve ergenlerde görülen",
+            "sentence": ""
+        },
+        {
+            "question": "posterity",
+            "answers": "gelecek kuşaklar, next generation",
+            "sentence": ""
+        },
+        {
+            "question": "permeability",
+            "answers": "geçirgenlik",
+            "sentence": ""
+        },
+        {
+            "question": "gestation",
+            "answers": "gebelik",
+            "sentence": ""
+        },
+        {
+            "question": "conceiving",
+            "answers": "gebe kalma",
+            "sentence": ""
+        },
+        {
+            "question": "prolific",
+            "answers": "doğurgan",
+            "sentence": ""
+        },
+        {
+            "question": "to herniate",
+            "answers": "fıtıklaşmak",
+            "sentence": ""
+        },
+        {
+            "question": "projectile",
+            "answers": "fışkırtır tarzda",
+            "sentence": ""
+        },
+        {
+            "question": "fetal",
+            "answers": "fetüse ilişkin",
+            "sentence": ""
+        },
+        {
+            "question": "paralysed",
+            "answers": "felç olmuş",
+            "sentence": ""
+        },
+        {
+            "question": "effect",
+            "answers": "etki",
+            "sentence": ""
+        },
+        {
+            "question": "paralysis",
+            "answers": "felç, inme",
+            "sentence": ""
+        },
+        {
+            "question": "puberty",
+            "answers": "ergenlik",
+            "sentence": ""
+        },
+        {
+            "question": "to intubate",
+            "answers": "entübe etmek",
+            "sentence": ""
+        },
+        {
+            "question": "inhibition",
+            "answers": "engel, durdurmak",
+            "sentence": ""
+        },
+        {
+            "question": "infected",
+            "answers": "enfekte olmuş",
+            "sentence": ""
+        },
+        {
+            "question": "infraction",
+            "answers": "enfarktüs",
+            "sentence": ""
+        },
+        {
+            "question": "worrisome",
+            "answers": "endişe, kaygı verici",
+            "sentence": ""
+        },
+        {
+            "question": "breastfeeding",
+            "answers": "emzirerek besleme",
+            "sentence": ""
+        },
+        {
+            "question": "to suck",
+            "answers": "emmek",
+            "sentence": ""
+        },
+        {
+            "question": "eczema",
+            "answers": "egzama",
+            "sentence": ""
+        },
+        {
+            "question": "palpate",
+            "answers": "elle muayene etmek",
+            "sentence": ""
+        },
+        {
+            "question": "midwife",
+            "answers": "ebe",
+            "sentence": ""
+        },
+        {
+            "question": "remadiable",
+            "answers": "düzeltilebilir",
+            "sentence": ""
+        },
+        {
+            "question": "hypotension",
+            "answers": "düşük tansiyon",
+            "sentence": ""
+        },
+        {
+            "question": "node",
+            "answers": "düğüm",
+            "sentence": ""
+        },
+        {
+            "question": "posture",
+            "answers": "duruş şekli, postür",
+            "sentence": ""
+        },
+        {
+            "question": "fertilize",
+            "answers": "döllenmek",
+            "sentence": ""
+        },
+        {
+            "question": "rash",
+            "answers": "döküntü",
+            "sentence": ""
+        },
+        {
+            "question": "dose",
+            "answers": "doz",
+            "sentence": ""
+        },
+        {
+            "question": "circulate",
+            "answers": "dolaşmak",
+            "sentence": ""
+        },
+        {
+            "question": "circulation",
+            "answers": "dolaşım, devrim",
+            "sentence": ""
+        },
+        {
+            "question": "tissue",
+            "answers": "doku",
+            "sentence": ""
+        },
+        {
+            "question": "congenital",
+            "answers": "doğuştan",
+            "sentence": ""
+        },
+        {
+            "question": "neonatal",
+            "answers": "doğumdan sonraki 4 haftayla ilgili",
+            "sentence": ""
+        },
+        {
+            "question": "parturient",
+            "answers": "doğum yapan",
+            "sentence": ""
+        },
+        {
+            "question": "knee to pelvis",
+            "answers": "dizden leğen kemiğine kadar",
+            "sentence": ""
+        },
+        {
+            "question": "delivery",
+            "answers": "doğum",
+            "sentence": ""
+        },
+        {
+            "question": "knee",
+            "answers": "diz",
+            "sentence": ""
+        },
+        {
+            "question": "cavity",
+            "answers": "dişte çürük",
+            "sentence": ""
+        },
+        {
+            "question": "dilated",
+            "answers": "genişlemiş",
+            "sentence": ""
+        },
+        {
+            "question": "diphtheria",
+            "answers": "difteri",
+            "sentence": ""
+        },
+        {
+            "question": "excreta",
+            "answers": "dışkı",
+            "sentence": ""
+        },
+        {
+            "question": "disinfectant",
+            "answers": "dezenfektan",
+            "sentence": ""
+        },
+        {
+            "question": "giant",
+            "answers": "dev",
+            "sentence": ""
+        },
+        {
+            "question": "invasive",
+            "answers": "deri altına inen, vücut içi",
+            "sentence": ""
+        },
+        {
+            "question": "subject",
+            "answers": "denek, kobay",
+            "sentence": ""
+        },
+        {
+            "question": "iron",
+            "answers": "demir",
+            "sentence": ""
+        },
+        {
+            "question": "vent",
+            "answers": "delik, yarık",
+            "sentence": ""
+        },
+        {
+            "question": "narrowing",
+            "answers": "darlık, daralma",
+            "sentence": ""
+        },
+        {
+            "question": "arteriosclerosis",
+            "answers": "damar sertleşmesi",
+            "sentence": ""
+        },
+        {
+            "question": "intravenous",
+            "answers": "damar içi",
+            "sentence": ""
+        },
+        {
+            "question": "vessel",
+            "answers": "damar",
+            "sentence": ""
+        },
+        {
+            "question": "internal",
+            "answers": "dahili, iç tarafta",
+            "sentence": ""
+        },
+        {
+            "question": "to worsen",
+            "answers": "daha da kötüleşmek",
+            "sentence": ""
+        },
+        {
+            "question": "decay",
+            "answers": "çürümek",
+            "sentence": ""
+        },
+        {
+            "question": "insoluble",
+            "answers": "çözünmeyen, erimez",
+            "sentence": ""
+        },
+        {
+            "question": "rod",
+            "answers": "çomak, çubuk",
+            "sentence": ""
+        },
+        {
+            "question": "crucial",
+            "answers": "çok önemli",
+            "sentence": ""
+        },
+        {
+            "question": "unlikely",
+            "answers": "çok az bir olasılıkla",
+            "sentence": ""
+        },
+        {
+            "question": "polio",
+            "answers": "çocuk felci",
+            "sentence": ""
+        },
+        {
+            "question": "abort",
+            "answers": "çocuk düşürmek",
+            "sentence": ""
+        },
+        {
+            "question": "zinc",
+            "answers": "çinko",
+            "sentence": ""
+        },
+        {
+            "question": "pair",
+            "answers": "çift",
+            "sentence": ""
+        },
+        {
+            "question": "to extract",
+            "answers": "çıkarmak",
+            "sentence": ""
+        },
+        {
+            "question": "jaw",
+            "answers": "çene",
+            "sentence": ""
+        },
+        {
+            "question": "varied",
+            "answers": "çeşitlilik gösteren, çeşitli",
+            "sentence": ""
+        },
+        {
+            "question": "palpitation",
+            "answers": "çarpıntı",
+            "sentence": ""
+        },
+        {
+            "question": "deformity",
+            "answers": "çarpıklık, sakatlık",
+            "sentence": ""
+        },
+        {
+            "question": "helpless",
+            "answers": "çaresiz",
+            "sentence": ""
+        },
+        {
+            "question": "remedy",
+            "answers": "çare",
+            "sentence": ""
+        },
+        {
+            "question": "gender",
+            "answers": "cinsiyet",
+            "sentence": ""
+        },
+        {
+            "question": "inanimate",
+            "answers": "cansız",
+            "sentence": ""
+        },
+        {
+            "question": "to shrink",
+            "answers": "büzüşmek",
+            "sentence": ""
+        },
+        {
+            "question": "enlarge",
+            "answers": "büyütmek",
+            "sentence": ""
+        },
+        {
+            "question": "growth",
+            "answers": "büyüme, gelişme",
+            "sentence": ""
+        },
+        {
+            "question": "demented",
+            "answers": "bunamış",
+            "sentence": ""
+        },
+        {
+            "question": "dementia",
+            "answers": "bunama",
+            "sentence": ""
+        },
+        {
+            "question": "to infect",
+            "answers": "bulaştırmak",
+            "sentence": ""
+        },
+        {
+            "question": "contagious",
+            "answers": "bulaşıcı",
+            "sentence": ""
+        },
+        {
+            "question": "nausea",
+            "answers": "bulantı",
+            "sentence": ""
+        },
+        {
+            "question": "vapour",
+            "answers": "buhar, buğu",
+            "sentence": ""
+        },
+        {
+            "question": "undulant fever",
+            "answers": "akdeniz/malta humması",
+            "sentence": ""
+        },
+        {
+            "question": "bronchitis",
+            "answers": "bronşit",
+            "sentence": ""
+        },
+        {
+            "question": "thereby",
+            "answers": "böylelikle",
+            "sentence": ""
+        },
+        {
+            "question": "zone",
+            "answers": "bölge",
+            "sentence": ""
+        },
+        {
+            "question": "kidney",
+            "answers": "böbrek",
+            "sentence": ""
+        },
+        {
+            "question": "disorder",
+            "answers": "bozukluk, düzensizlik",
+            "sentence": ""
+        },
+        {
+            "question": "malfunction",
+            "answers": "bozuk işleme",
+            "sentence": ""
+        },
+        {
+            "question": "to impair",
+            "answers": "bozmak, zarar vermek",
+            "sentence": ""
+        },
+        {
+            "question": "cervical",
+            "answers": "boyun ile ilgili",
+            "sentence": ""
+        },
+        {
+            "question": "neck",
+            "answers": "boyun",
+            "sentence": ""
+        },
+        {
+            "question": "horn",
+            "answers": "boynuz",
+            "sentence": ""
+        },
+        {
+            "question": "excretion",
+            "answers": "boşaltım",
+            "sentence": ""
+        },
+        {
+            "question": "choke",
+            "answers": "boğmak, nefesini kesmek",
+            "sentence": ""
+        },
+        {
+            "question": "whooping cough",
+            "answers": "boğmaca",
+            "sentence": ""
+        },
+        {
+            "question": "unconscious",
+            "answers": "bilinçaltı",
+            "sentence": ""
+        },
+        {
+            "question": "unconsciousness",
+            "answers": "bilinçsizlik, baygınlık",
+            "sentence": ""
+        },
+        {
+            "question": "gland",
+            "answers": "bez",
+            "sentence": ""
+        },
+        {
+            "question": "hindbrain",
+            "answers": "beynin arka kısımları",
+            "sentence": ""
+        },
+        {
+            "question": "meninges",
+            "answers": "beyni örten 3 membran'dan biri",
+            "sentence": ""
+        },
+        {
+            "question": "cerebellum",
+            "answers": "beyincik",
+            "sentence": ""
+        },
+        {
+            "question": "nutritional",
+            "answers": "beslenmeyle ilgili",
+            "sentence": ""
+        },
+        {
+            "question": "nutrition",
+            "answers": "beslenme",
+            "sentence": ""
+        },
+        {
+            "question": "nutrient composition",
+            "answers": "besin bileşimi",
+            "sentence": ""
+        },
+        {
+            "question": "manifestation",
+            "answers": "belirti, ortaya çıkış",
+            "sentence": ""
+        },
+        {
+            "question": "latent",
+            "answers": "belirti göstermeyen, gizli",
+            "sentence": ""
+        },
+        {
+            "question": "posture",
+            "answers": "bedenin duruş şekli",
+            "sentence": ""
+        },
+        {
+            "question": "infanticide",
+            "answers": "bebeklerin öldürülmesi",
+            "sentence": ""
+        },
+        {
+            "question": "faint",
+            "answers": "bayılmak",
+            "sentence": ""
+        },
+        {
+            "question": "dizziness",
+            "answers": "baş dönmesi",
+            "sentence": ""
+        },
+        {
+            "question": "head",
+            "answers": "baş",
+            "sentence": ""
+        },
+        {
+            "question": "subdue",
+            "answers": "bastırmak",
+            "sentence": ""
+        },
+        {
+            "question": "pressure",
+            "answers": "basınç",
+            "sentence": ""
+        },
+        {
+            "question": "expectorate",
+            "answers": "balgam çıkartmak, kan tükürmek",
+            "sentence": ""
+        },
+        {
+            "question": "committed",
+            "answers": "bağlı olan, işlenen",
+            "sentence": ""
+        },
+        {
+            "question": "immune-compromised",
+            "answers": "bağışıklıkları tehlikede olan",
+            "sentence": ""
+        },
+        {
+            "question": "exemption",
+            "answers": "bağışıklık",
+            "sentence": ""
+        },
+        {
+            "question": "immunization",
+            "answers": "bağışıklık kazandırma",
+            "sentence": ""
+        },
+        {
+            "question": "immunity",
+            "answers": "bağışıklık",
+            "sentence": ""
+        },
+        {
+            "question": "donor",
+            "answers": "bağışçı",
+            "sentence": ""
+        },
+        {
+            "question": "gut",
+            "answers": "bağırsak",
+            "sentence": ""
+        },
+        {
+            "question": "leg",
+            "answers": "bacak",
+            "sentence": ""
+        },
+        {
+            "question": "paternal",
+            "answers": "baba tarafından",
+            "sentence": ""
+        },
+        {
+            "question": "distinguish",
+            "answers": "ayrımına varmak",
+            "sentence": ""
+        },
+        {
+            "question": "outpatient",
+            "answers": "ayakta tedavi edilen hasta",
+            "sentence": ""
+        },
+        {
+            "question": "ankle",
+            "answers": "ayak bileği",
+            "sentence": ""
+        },
+        {
+            "question": "beat",
+            "answers": "atma, atım, vuruş",
+            "sentence": ""
+        },
+        {
+            "question": "febrile",
+            "answers": "ateşli, ateşe ait",
+            "sentence": ""
+        },
+        {
+            "question": "torrid",
+            "answers": "ateşli",
+            "sentence": ""
+        },
+        {
+            "question": "artery",
+            "answers": "atardamar",
+            "sentence": ""
+        },
+        {
+            "question": "drowsiness",
+            "answers": "aşırı uyuklama hali",
+            "sentence": ""
+        },
+        {
+            "question": "hypersensitive",
+            "answers": "aşırı duyarlı",
+            "sentence": ""
+        },
+        {
+            "question": "overdose",
+            "answers": "aşırı doz",
+            "sentence": ""
+        },
+        {
+            "question": "to implant",
+            "answers": "aşılamak",
+            "sentence": ""
+        },
+        {
+            "question": "stage",
+            "answers": "aşama",
+            "sentence": ""
+        },
+        {
+            "question": "to augment",
+            "answers": "arttırmak, çoğaltmak",
+            "sentence": ""
+        },
+        {
+            "question": "debris",
+            "answers": "artık madde, yıkıntı ürünü",
+            "sentence": ""
+        },
+        {
+            "question": "pulmonary",
+            "answers": "akciğere ait",
+            "sentence": ""
+        },
+        {
+            "question": "dire",
+            "answers": "acil, çok ciddi",
+            "sentence": ""
+        }
+        
+    ]
+}

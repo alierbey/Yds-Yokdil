@@ -1,0 +1,1561 @@
+{
+    "questions": [
+        {
+            "question": "comet",
+            "answers": "kuyruklu yıldız",
+            "sentence": ""
+        },
+        {
+            "question": "arctic",
+            "answers": "kuzey kutbu ve ona ait",
+            "sentence": ""
+        },
+        {
+            "question": "sphere",
+            "answers": "küre",
+            "sentence": ""
+        },
+        {
+            "question": "matter",
+            "answers": "madde",
+            "sentence": ""
+        },
+        {
+            "question": "alloy",
+            "answers": "maden alaşımı",
+            "sentence": ""
+        },
+        {
+            "question": "fungus",
+            "answers": "mantar",
+            "sentence": ""
+        },
+        {
+            "question": "smelt",
+            "answers": "madeni eritmek",
+            "sentence": ""
+        },
+        {
+            "question": "mammals",
+            "answers": "memeliler",
+            "sentence": ""
+        },
+        {
+            "question": "naturalist",
+            "answers": "doğa bilimci",
+            "sentence": ""
+        },
+        {
+            "question": "revolution",
+            "answers": "devrim",
+            "sentence": ""
+        },
+        {
+            "question": "spin",
+            "answers": "döndürmek, çevirmek",
+            "sentence": ""
+        },
+        {
+            "question": "stagnant",
+            "answers": "durgun",
+            "sentence": ""
+        },
+        {
+            "question": "drainage",
+            "answers": "drenaj, su akıtma sistemi",
+            "sentence": ""
+        },
+        {
+            "question": "gradient",
+            "answers": "eğim, meyil",
+            "sentence": ""
+        },
+        {
+            "question": "wreck",
+            "answers": "enkaz",
+            "sentence": ""
+        },
+        {
+            "question": "melt",
+            "answers": "erimek",
+            "sentence": ""
+        },
+        {
+            "question": "molten",
+            "answers": "erimiş, sıvılaşmış",
+            "sentence": ""
+        },
+        {
+            "question": "phase",
+            "answers": "evre, safha",
+            "sentence": ""
+        },
+        {
+            "question": "evolution",
+            "answers": "evrim",
+            "sentence": ""
+        },
+        {
+            "question": "overfed",
+            "answers": "fazla besili",
+            "sentence": ""
+        },
+        {
+            "question": "launch",
+            "answers": "fırlatmak, atmak",
+            "sentence": ""
+        },
+        {
+            "question": "launcher",
+            "answers": "fırlatıcı",
+            "sentence": ""
+        },
+        {
+            "question": "dart",
+            "answers": "füze",
+            "sentence": ""
+        },
+        {
+            "question": "elapse",
+            "answers": "geçen zaman, (süre)geçmek",
+            "sentence": ""
+        },
+        {
+            "question": "stringer",
+            "answers": "geçirgen kaya",
+            "sentence": ""
+        },
+        {
+            "question": "tide",
+            "answers": "gel-git",
+            "sentence": ""
+        },
+        {
+            "question": "tidal",
+            "answers": "gel gitle ilgili",
+            "sentence": ""
+        },
+        {
+            "question": "heavens",
+            "answers": "gökyüzü, sema",
+            "sentence": ""
+        },
+        {
+            "question": "pond",
+            "answers": "gölcük, gölet",
+            "sentence": ""
+        },
+        {
+            "question": "relative to",
+            "answers": "görece",
+            "sentence": ""
+        },
+        {
+            "question": "relativity",
+            "answers": "görecelik",
+            "sentence": ""
+        },
+        {
+            "question": "booster",
+            "answers": "güçlendirici",
+            "sentence": ""
+        },
+        {
+            "question": "fertilize",
+            "answers": "manure, gübre",
+            "sentence": ""
+        },
+        {
+            "question": "solar",
+            "answers": "güneşle ilgili",
+            "sentence": ""
+        },
+        {
+            "question": "sunbeam",
+            "answers": "güneş ışını",
+            "sentence": ""
+        },
+        {
+            "question": "alleviate",
+            "answers": "hafifletmek, azaltmak",
+            "sentence": ""
+        },
+        {
+            "question": "govern",
+            "answers": "hakim olmak, yönetmek",
+            "sentence": ""
+        },
+        {
+            "question": "sort out",
+            "answers": "halletmek, sınıflandırmak",
+            "sentence": ""
+        },
+        {
+            "question": "motion",
+            "answers": "hareket",
+            "sentence": ""
+        },
+        {
+            "question": "vulnerable",
+            "answers": "hassas, zayıf",
+            "sentence": ""
+        },
+        {
+            "question": "harvest",
+            "answers": "hasat etme",
+            "sentence": ""
+        },
+        {
+            "question": "airship",
+            "answers": "hava gemisi",
+            "sentence": ""
+        },
+        {
+            "question": "aviation",
+            "answers": "havacılık",
+            "sentence": ""
+        },
+        {
+            "question": "aerial",
+            "answers": "havada bulunan, havaya ait",
+            "sentence": ""
+        },
+        {
+            "question": "repository",
+            "answers": "havuz, basin, ambar, depo",
+            "sentence": ""
+        },
+        {
+            "question": "life-threatening",
+            "answers": "hayatı tehdit eden",
+            "sentence": ""
+        },
+        {
+            "question": "survive",
+            "answers": "hayatta kalmak",
+            "sentence": ""
+        },
+        {
+            "question": "considerable",
+            "answers": "hayli, çok",
+            "sentence": ""
+        },
+        {
+            "question": "precast concrete",
+            "answers": "hazır beton",
+            "sentence": ""
+        },
+        {
+            "question": "inborn",
+            "answers": "irsi, kalıtsal",
+            "sentence": ""
+        },
+        {
+            "question": "velocity",
+            "answers": "hız, sürat",
+            "sentence": ""
+        },
+        {
+            "question": "swift",
+            "answers": "hızlı",
+            "sentence": ""
+        },
+        {
+            "question": "acceleration",
+            "answers": "hızlanma",
+            "sentence": ""
+        },
+        {
+            "question": "accelerate",
+            "answers": "hızlandırmak",
+            "sentence": ""
+        },
+        {
+            "question": "whirlwind",
+            "answers": "hortum",
+            "sentence": ""
+        },
+        {
+            "question": "pasture",
+            "answers": "hububat, tahıl",
+            "sentence": ""
+        },
+        {
+            "question": "luminescence",
+            "answers": "ışıldama, parıldama",
+            "sentence": ""
+        },
+        {
+            "question": "conduction",
+            "answers": "ısının katı maddelerde iletilmesi",
+            "sentence": ""
+        },
+        {
+            "question": "instinct",
+            "answers": "iç güdü",
+            "sentence": ""
+        },
+        {
+            "question": "beam",
+            "answers": "ışın",
+            "sentence": ""
+        },
+        {
+            "question": "conductive",
+            "answers": "iletken, geçirgen",
+            "sentence": ""
+        },
+        {
+            "question": "convey",
+            "answers": "iletmek, taşımak, nakletmek",
+            "sentence": ""
+        },
+       
+        {
+            "question": "exploration",
+            "answers": "inceleme, araştırma",
+            "sentence": ""
+        },
+        {
+            "question": "descend",
+            "answers": "inmek, alçalmak",
+            "sentence": ""
+        },
+        {
+            "question": "human genome",
+            "answers": "insan genleri",
+            "sentence": ""
+        },
+        {
+            "question": "humanoid",
+            "answers": "insansı robot",
+            "sentence": ""
+        },
+        {
+            "question": "unmanned",
+            "answers": "insansız",
+            "sentence": ""
+        },
+        {
+            "question": "boulder",
+            "answers": "iri kaya parçası",
+            "sentence": ""
+        },
+        {
+            "question": "imported",
+            "answers": "ithal edilmiş",
+            "sentence": ""
+        },
+        {
+            "question": "insulate",
+            "answers": "izole etmek",
+            "sentence": ""
+        },
+        {
+            "question": "shell",
+            "answers": "kabuk",
+            "sentence": ""
+        },
+        {
+            "question": "crust",
+            "answers": "kabuk, dış tabaka",
+            "sentence": ""
+        },
+        {
+            "question": "permanent",
+            "answers": "kalıcı, sürekli",
+            "sentence": ""
+        },
+        {
+            "question": "groove",
+            "answers": "kanal",
+            "sentence": ""
+        },
+        {
+            "question": "sewerage",
+            "answers": "kanalizasyon",
+            "sentence": ""
+        },
+        {
+            "question": "overland",
+            "answers": "karadan",
+            "sentence": ""
+        },
+        {
+            "question": "compound",
+            "answers": "karışım, bileşim",
+            "sentence": ""
+        },
+        {
+            "question": "in view of",
+            "answers": "karşısında, durumunda",
+            "sentence": ""
+        },
+        {
+            "question": "hurricane",
+            "answers": "kasırga, hortum",
+            "sentence": ""
+        },
+        {
+            "question": "solid",
+            "answers": "katı, sert",
+            "sentence": ""
+        },
+        {
+            "question": "join",
+            "answers": "katılmak",
+            "sentence": ""
+        },
+        {
+            "question": "contribution",
+            "answers": "katkı",
+            "sentence": ""
+        },
+        {
+            "question": "additive",
+            "answers": "katkı maddesi",
+            "sentence": ""
+        },
+        {
+            "question": "layer",
+            "answers": "katman",
+            "sentence": ""
+        },
+        {
+            "question": "concept",
+            "answers": "kavram",
+            "sentence": ""
+        },
+        {
+            "question": "slide",
+            "answers": "kayma, kaydırma",
+            "sentence": ""
+        },
+        {
+            "question": "fuse",
+            "answers": "kaynaştırmak",
+            "sentence": ""
+        },
+        {
+            "question": "excavation",
+            "answers": "kazı",
+            "sentence": ""
+        },
+        {
+            "question": "prophecy",
+            "answers": "kehanet",
+            "sentence": ""
+        },
+        {
+            "question": "arch",
+            "answers": "kemer",
+            "sentence": ""
+        },
+        {
+            "question": "tentative",
+            "answers": "kesin olmayan, deneysel, kararsız",
+            "sentence": ""
+        },
+        {
+            "question": "conclusive",
+            "answers": "kesin, son, nihai",
+            "sentence": ""
+        },
+        {
+            "question": "acute",
+            "answers": "keskin, ciddi",
+            "sentence": ""
+        },
+        {
+            "question": "chestnut",
+            "answers": "kestane ağacı, kestane",
+            "sentence": ""
+        },
+        {
+            "question": "continental",
+            "answers": "kıtasal",
+            "sentence": ""
+        },
+        {
+            "question": "spark",
+            "answers": "kıvılcım",
+            "sentence": ""
+        },
+        {
+            "question": "infrared",
+            "answers": "kızıl ötesi",
+            "sentence": ""
+        },
+        {
+            "question": "chalk",
+            "answers": "kireç taşı",
+            "sentence": ""
+        },
+        {
+            "question": "lime scale",
+            "answers": "kireç tortusu",
+            "sentence": ""
+        },
+        {
+            "question": "contamination",
+            "answers": "kirlenme",
+            "sentence": ""
+        },
+        {
+            "question": "smog",
+            "answers": "kirli hava kütlesi",
+            "sentence": ""
+        },
+        {
+            "question": "impurity",
+            "answers": "irlilik, katışık şey",
+            "sentence": ""
+        },
+        {
+            "question": "stereotype",
+            "answers": "klişe, basmakalıp",
+            "sentence": ""
+        },
+        {
+            "question": "cobalt",
+            "answers": "kobalt",
+            "sentence": ""
+        },
+        {
+            "question": "odour",
+            "answers": "koku",
+            "sentence": ""
+        },
+        {
+            "question": "flavourful",
+            "answers": "kokulu, aromatic",
+            "sentence": ""
+        },
+        {
+            "question": "perishable",
+            "answers": "kolay bozulur, dayanıksız",
+            "sentence": ""
+        },
+        {
+            "question": "formidable",
+            "answers": "korkunç",
+            "sentence": ""
+        },
+        {
+            "question": "terms",
+            "answers": "koşullar",
+            "sentence": ""
+        },
+        {
+            "question": "conserve",
+            "answers": "korumak, muhafaza etmek",
+            "sentence": ""
+        },
+        {
+            "question": "coal-mining",
+            "answers": "kömür madenciliği",
+            "sentence": ""
+        },
+        {
+            "question": "suds",
+            "answers": "köpük, sabun köpüğü",
+            "sentence": ""
+        },
+        {
+            "question": "fumes",
+            "answers": "kötü kokan gazlar",
+            "sentence": ""
+        },
+        {
+            "question": "earplug",
+            "answers": "kulak tıkacı",
+            "sentence": ""
+        },
+        {
+            "question": "sandstone",
+            "answers": "kum taşı",
+            "sentence": ""
+        },
+        {
+            "question": "lead-based",
+            "answers": "kurşun bazlı",
+            "sentence": ""
+        },
+        {
+            "question": "bullet-proof",
+            "answers": "kurşun geçirmez",
+            "sentence": ""
+        },
+        {
+            "question": "arid",
+            "answers": "kuru, kıraç, sıkı",
+            "sentence": ""
+        },
+        {
+            "question": "foundation",
+            "answers": "kurum, tesis, vakıf",
+            "sentence": ""
+        },
+        {
+            "question": "plume",
+            "answers": "kuş tüyü",
+            "sentence": ""
+        },
+        {
+            "question": "crumble",
+            "answers": "parçalamak, ufalanmak",
+            "sentence": ""
+           
+        },
+        {
+            "question": "dense",
+            "answers": "youğun",
+            "sentence": ""
+            
+        },
+        {
+            "question": "rest",
+            "answers": "dinlenme",
+            "sentence": ""
+           
+        },
+       
+        {
+            "question": "recur ",
+            "answers": "tekrarlamak, nüksetmek ",
+            "sentence": ""
+        },
+        {
+            "question": "underlying ",
+            "answers": "altta yatan ",
+            "sentence": ""
+        },
+        {
+            "question": "expense ",
+            "answers": "masraf ",
+            "sentence": ""
+        },
+        {
+            "question": "miraculous ",
+            "answers": "mucizevi ",
+            "sentence": ""
+        },
+        {
+            "question": "lunar",
+            "answers": " ayla ilgili",
+            "sentence": ""
+        },
+        {
+            "question": "predisposition",
+            "answers": "yatkınlık, eğilim ",
+            "sentence": ""
+        },
+        {
+            "question": " enable",
+            "answers": " imkân sağlamak",
+            "sentence": ""
+        },
+        {
+            "question": "annual ",
+            "answers": "yıllık ",
+            "sentence": ""
+        },
+        {
+            "question": " steady",
+            "answers": "istikrarlı, sabit ",
+            "sentence": ""
+        },
+        {
+            "question": "enormously ",
+            "answers": " olağanüstü bir şekilde",
+            "sentence": ""
+        },
+        {
+            "question": "prepared ",
+            "answers": "hazır ",
+            "sentence": ""
+        },
+        {
+            "question": "coral ",
+            "answers": "mercan ",
+            "sentence": ""
+        },
+        {
+            "question": "distinguish (v) ",
+            "answers": "ayırt etmek, ayırmak ",
+            "sentence": ""
+        },
+        {
+            "question": "partial (adj) ",
+            "answers": "kısmen ",
+            "sentence": ""
+        },
+        {
+            "question": "cavity (n) ",
+            "answers": "boşluk ",
+            "sentence": ""
+        },
+        {
+            "question": "unreliable (adj) ",
+            "answers": "güvenilmez ",
+            "sentence": ""
+        },
+        {
+            "question": "divide (v) ",
+            "answers": "bölmek, ayırmak ",
+            "sentence": ""
+        },
+        {
+            "question": "means (n) ",
+            "answers": "araç, vasıta, yol ",
+            "sentence": ""
+        },
+        {
+            "question": "enforce (v) ",
+            "answers": "uygulamak, yürürlüğe koymak ",
+            "sentence": ""
+        },
+        {
+            "question": "recover (v) ",
+            "answers": "iyileşmek, atlatmak ",
+            "sentence": ""
+        },
+        {
+            "question": "discretion (n) ",
+            "answers": "sağduyu, ihtiyat, tedbir ",
+            "sentence": ""
+        },
+        {
+            "question": "conduct (v) ",
+            "answers": "idare etmek, yapmak ",
+            "sentence": ""
+        },
+        {
+            "question": "assign (v) ",
+            "answers": "görev vermek, tahsis etmek, atamak ",
+            "sentence": ""
+        },
+        {
+            "question": "lease (v) ",
+            "answers": "kiralamak, kiraya vermek ",
+            "sentence": ""
+        },
+        {
+            "question": "distraction (n) ",
+            "answers": "dikkatini dağıtma ",
+            "sentence": ""
+        },
+        {
+            "question": "urban (adj) ",
+            "answers": "şehirsel, kente ait ",
+            "sentence": ""
+        },
+        {
+            "question": "rebut (v) ",
+            "answers": "çürütmek ",
+            "sentence": ""
+        },
+        {
+            "question": "certain (adj)",
+            "answers": "kesin, emin, belli, belirli, bazı",
+            "sentence": ""
+        },
+        {
+            "question": "certainly (adv)",
+            "answers": "kesinlikle, elbette",
+            "sentence": ""
+        },
+        {
+            "question": "adjust (v)",
+            "answers": "ayarlamak | uyum sağlamak",
+            "sentence": ""
+        },
+        {
+            "question": "adjust size",
+            "answers": ": boyutu ayarlamak",
+            "sentence": ""
+        },
+        {
+            "question": "adjust voltage",
+            "answers": " voltajı ayarlamak",
+            "sentence": ""
+        },
+        {
+            "question": "discover (v)",
+            "answers": "keşfetmek, bulmak",
+            "sentence": ""
+        },
+        {
+            "question": "discovery (n)",
+            "answers": "keşif",
+            "sentence": ""
+        },
+        {
+            "question": "sicentific discovery",
+            "answers": "bilimsel keşif",
+            "sentence": ""
+        },
+        {
+            "question": "obvious (adj)",
+            "answers": "bariz, açık, net",
+            "sentence": ""
+        },
+        {
+            "question": "obvious difference",
+            "answers": "bariz fark",
+            "sentence": ""
+        },
+        {
+            "question": "hardly (adv)",
+            "answers": "neredeyse hiç, zar zor",
+            "sentence": ""
+        },
+        {
+            "question": "occur (v)",
+            "answers": "meydana gelmek, olmak",
+            "sentence": ""
+        },
+        {
+            "question": "an earthquake may occur",
+            "answers": "bir deprem olabilir",
+            "sentence": ""
+        },
+        {
+            "question": "adverse (adj)",
+            "answers": "olumsuz",
+            "sentence": ""
+        },
+        {
+            "question": "adversely (adv)",
+            "answers": "olumsuz bir şekilde",
+            "sentence": ""
+        },
+        {
+            "question": "adverse result",
+            "answers": "olumsuz sonuç",
+            "sentence": ""
+        },
+        {
+            "question": "exceed (v)",
+            "answers": "aşmak",
+            "sentence": ""
+        },
+        {
+            "question": "excess (n)",
+            "answers": "fazlalık",
+            "sentence": ""
+        },
+        {
+            "question": "exceed budget",
+            "answers": "bütçeyi aşmak",
+            "sentence": ""
+        },
+        {
+            "question": "excessive consumption",
+            "answers": "aşırı tüketim",
+            "sentence": ""
+        },
+        {
+            "question": "excessive heat",
+            "answers": "aşırı sıcak",
+            "sentence": ""
+        },
+        {
+            "question": "counterpart (n)",
+            "answers": "emsal, muadil, denk",
+            "sentence": ""
+        },
+        {
+            "question": "prove claim",
+            "answers": "iddiayı kanıtlamak",
+            "sentence": ""
+        },
+        {
+            "question": "extinct (n)",
+            "answers": "nesli tükenmiş | sönmüş (yanardağ)",
+            "sentence": ""
+        },
+        {
+            "question": "extinction (n)",
+            "answers": "nesli tükenme",
+            "sentence": ""
+        },
+        {
+            "question": "extinct volcano",
+            "answers": "sönmüş yanardağ",
+            "sentence": ""
+        },
+        {
+            "question": "mass extinction",
+            "answers": "toplu yok oluş",
+            "sentence": ""
+        },
+        {
+            "question": "extinct species",
+            "answers": "nesli tükenmiş türler",
+            "sentence": ""
+        },
+        {
+            "question": "evidence (n)",
+            "answers": "kanıt, delil",
+            "sentence": ""
+        },
+        {
+            "question": "gather evidence",
+            "answers": "kanıt toplamak",
+            "sentence": ""
+        },
+        {
+            "question": "onclusive evidence",
+            "answers": "kesin kanıt",
+            "sentence": ""
+        },
+        {
+            "question": "lack (n)",
+            "answers": "eksiklik",
+            "sentence": ""
+        },
+        {
+            "question": "lacking (adj)",
+            "answers": "eksik",
+            "sentence": ""
+        },
+        {
+            "question": "region (n)",
+            "answers": "bölge",
+            "sentence": ""
+        },
+        {
+            "question": "uncertain (adj)",
+            "answers": "belirsiz, karasız",
+            "sentence": ""
+        },
+        {
+            "question": "concern",
+            "answers": "endişe",
+            "sentence": ""
+        },
+        {
+            "question": "rapid (adj)",
+            "answers": "hızlı",
+            "sentence": ""
+        },
+        {
+            "question": "decline",
+            "answers": "azalma, gerileme",
+            "sentence": ""
+        },
+        {
+            "question": "repair (v)",
+            "answers": "tamir etmek",
+            "sentence": ""
+        },
+        {
+            "question": "rely on",
+            "answers": " bel bağlamak, güvenmek",
+            "sentence": ""
+        },
+        {
+            "question": "rely on aid",
+            "answers": "yardımına bel bağlamak",
+            "sentence": ""
+        },
+        {
+            "question": "claim (n)",
+            "answers": "iddia | talep",
+            "sentence": ""
+        },
+        {
+            "question": "carry out",
+            "answers": "yerine getirmek, yapmak, uygulamak",
+            "sentence": ""
+        },
+        {
+            "question": "carry out experiment",
+            "answers": "deney yapmak",
+            "sentence": ""
+        },
+        {
+            "question": "carry out excavation",
+            "answers": "kazı yapmak",
+            "sentence": ""
+        },
+        {
+            "question": "certainty (n)",
+            "answers": "kesinlik",
+            "sentence": ""
+        },
+        {
+            "question": "carry out maintenance",
+            "answers": "bakım yapmak",
+            "sentence": ""
+        },
+        {
+            "question": "transform (v)",
+            "answers": "dönüşmek, değişmek",
+            "sentence": ""
+        },
+        {
+            "question": "transform radically",
+            "answers": "kökten değişmek",
+            "sentence": ""
+        },
+        {
+            "question": "undergo transformation",
+            "answers": "dönüşüm geçirmek",
+            "sentence": ""
+        },
+        {
+            "question": "layer (n)",
+            "answers": "tabaka, katman",
+            "sentence": ""
+        },
+        {
+            "question": "outer layer",
+            "answers": "dış tabaka",
+            "sentence": ""
+        },
+        {
+            "question": "ozone layer",
+            "answers": "ozon tabakası",
+            "sentence": ""
+        },
+        {
+            "question": "regional (adj)",
+            "answers": "bölgesel",
+            "sentence": ""
+        },
+        {
+            "question": "urban region",
+            "answers": "kentsel bölge",
+            "sentence": ""
+        },
+        {
+            "question": "regional government",
+            "answers": "bölgesel hükümet",
+            "sentence": ""
+        },
+        {
+            "question": "purpose (n)",
+            "answers": "amaç",
+            "sentence": ""
+        },
+        {
+            "question": "original purpose",
+            "answers": "asıl amaç",
+            "sentence": ""
+        },
+        {
+            "question": "research purpose",
+            "answers": "araştırma amacı",
+            "sentence": ""
+        },
+        {
+            "question": "maintain (v)",
+            "answers": "devam ettirmek | bakım yapmak | ifade etmek",
+            "sentence": ""
+        },
+        {
+            "question": "maintenance (n)",
+            "answers": "bakım | nafaka",
+            "sentence": ""
+        },
+        {
+            "question": "improve (v)",
+            "answers": "gelişmek",
+            "sentence": ""
+        },
+        {
+            "question": "improvement (n)",
+            "answers": "gelişme",
+            "sentence": ""
+        },
+        {
+            "question": "improve rapidly",
+            "answers": "hızla gelişmek",
+            "sentence": ""
+        },
+        {
+            "question": "allow (v)",
+            "answers": "izin vermek | olanak sağlamak, mümkün kılmak",
+            "sentence": ""
+        },
+        {
+            "question": "allow time",
+            "answers": "zaman tanımak",
+            "sentence": ""
+        },
+        {
+            "question": "claim (v)",
+            "answers": "iddia etmek | talep etmek | can almak",
+            "sentence": ""
+        },
+        {
+            "question": "uncertainty (n)",
+            "answers": "belirsizlik",
+            "sentence": ""
+        },
+        {
+            "question": "component (n)",
+            "answers": "bileşen, parça",
+            "sentence": ""
+        },
+        {
+            "question": "invention (n)",
+            "answers": "icat, buluş",
+            "sentence": ""
+        },
+        {
+            "question": "invent (v)",
+            "answers": "icat etmek | uydurmak",
+            "sentence": ""
+        },
+        {
+            "question": "inventor (n)",
+            "answers": " mucit",
+            "sentence": ""
+        },
+        {
+            "question": "invent a machine",
+            "answers": "bir makine icat etmek",
+            "sentence": ""
+        },
+        {
+            "question": "produce (v)",
+            "answers": "üretmek",
+            "sentence": ""
+        },
+        {
+            "question": "production (n)",
+            "answers": "üretim",
+            "sentence": ""
+        },
+        {
+            "question": "produce solution",
+            "answers": "çözüm üretmek",
+            "sentence": ""
+        },
+        {
+            "question": "waste product",
+            "answers": "atık ürün",
+            "sentence": ""
+        },
+        {
+            "question": "wreck",
+            "answers": "enkaz",
+            "sentence": ""
+        },
+        {
+            "question": "vulnerable",
+            "answers": "savunmasız, zayıf, hassas",
+            "sentence": ""
+        },
+        {
+            "question": "vividly",
+            "answers": "canlı biçimde",
+            "sentence": ""
+        },
+        {
+            "question": "vegetative",
+            "answers": "bitkisel",
+            "sentence": ""
+        },
+        {
+            "question": "vibration",
+            "answers": "titreşim",
+            "sentence": ""
+        },
+        {
+            "question": "viscosity",
+            "answers": "kıvam, akışkanlık",
+            "sentence": ""
+        },
+        {
+            "question": "viable",
+            "answers": "uygulanabilir",
+            "sentence": ""
+        },
+        {
+            "question": "vertebrate",
+            "answers": "omurgalı",
+            "sentence": ""
+        },
+        {
+            "question": "ventilation",
+            "answers": "havalandırma",
+            "sentence": ""
+        },
+        {
+            "question": "vehicular",
+            "answers": "taşıtlarla ilgili",
+            "sentence": ""
+        },
+        {
+            "question": "vehicle",
+            "answers": "araç",
+            "sentence": ""
+        },
+        {
+            "question": "warfare",
+            "answers": "savaş hal",
+            "sentence": ""
+        },
+        {
+            "question": "survey",
+            "answers": "anket, taramak, araştırmak",
+            "sentence": ""
+        },
+        {
+            "question": "transport",
+            "answers": "taşımak, nakletmek",
+            "sentence": ""
+        },
+        {
+            "question": "transmission",
+            "answers": "iletim, aktarım",
+            "sentence": ""
+        },
+        {
+            "question": "swell",
+            "answers": "kabarmak, şişmek",
+            "sentence": ""
+        },
+        {
+            "question": "sticky",
+            "answers": "yapışkan",
+            "sentence": ""
+        },
+        {
+            "question": "steel",
+            "answers": "çelik",
+            "sentence": ""
+        },
+        {
+            "question": "surface",
+            "answers": "yüzey",
+            "sentence": ""
+        },
+        {
+            "question": "seaweed",
+            "answers": "deniz yosunu",
+            "sentence": ""
+        },
+        {
+            "question": "slab",
+            "answers": "levha, plak, tabaka",
+            "sentence": ""
+        },
+        {
+            "question": "sediment",
+            "answers": "tortu",
+            "sentence": ""
+        },
+        {
+            "question": "sedimentation",
+            "answers": "çökelme",
+            "sentence": ""
+        },
+        {
+            "question": "reverberation",
+            "answers": "yankılanma",
+            "sentence": ""
+        },
+        {
+            "question": "rigorous",
+            "answers": "titiz",
+            "sentence": ""
+        },
+        {
+            "question": "qualitative",
+            "answers": "nitel",
+            "sentence": ""
+        },
+        {
+            "question": "melt",
+            "answers": "erimek, eritmek",
+            "sentence": ""
+        },
+        {
+            "question": "Martian",
+            "answers": "marsa ait, marsla ilgili",
+            "sentence": ""
+        },
+        {
+            "question": "gravitation",
+            "answers": "yerçekimi",
+            "sentence": ""
+        },
+        {
+            "question": "greenhouse",
+            "answers": "sera",
+            "sentence": ""
+        },
+        {
+            "question": "flourish",
+            "answers": "gelişmek, serpilmek",
+            "sentence": ""
+        },
+        {
+            "question": "erosion",
+            "answers": "aşınma, erozyon",
+            "sentence": ""
+        },
+        {
+            "question": "enamel",
+            "answers": "emaye",
+            "sentence": ""
+        },
+        {
+            "question": "diarrhoea",
+            "answers": "ishal",
+            "sentence": ""
+        },
+        {
+            "question": "desalination",
+            "answers": "tuzdan arındırma",
+            "sentence": ""
+        },
+        {
+            "question": "forest",
+            "answers": "orman",
+            "sentence": ""
+        },
+        {
+            "question": "flora",
+            "answers": "bitki örtüsü",
+            "sentence": ""
+        },
+        {
+            "question": "burst",
+            "answers": "patlamak",
+            "sentence": ""
+        },
+        {
+            "question": "alloy",
+            "answers": "alaşım",
+            "sentence": ""
+        },
+        {
+            "question": "airstream",
+            "answers": "hava akımı",
+            "sentence": ""
+        },
+        {
+            "question": "arid",
+            "answers": "kurak, çorak",
+            "sentence": ""
+        },
+        {
+            "question": "ashore",
+            "answers": "karaya, sahile",
+            "sentence": ""
+        },
+        {
+            "question": "climate",
+            "answers": "iklim",
+            "sentence": ""
+        },
+        {
+            "question": "collision",
+            "answers": "çarpışma",
+            "sentence": ""
+        },
+        {
+            "question": "component",
+            "answers": "bileşen, parça",
+            "sentence": ""
+        },
+        {
+            "question": "convince",
+            "answers": "ikna etmek",
+            "sentence": ""
+        },
+        {
+            "question": "mainland",
+            "answers": "anakara",
+            "sentence": ""
+        },
+        {
+            "question": "erode",
+            "answers": "aşındırmak, aşınmak",
+            "sentence": ""
+        },
+        {
+            "question": "lunar base",
+            "answers": "ay üssü",
+            "sentence": ""
+        },
+        {
+            "question": "enlightenment",
+            "answers": "aydınlanm(çağı)",
+            "sentence": ""
+        },
+        {
+            "question": "scarce",
+            "answers": "az bulunur, nadir",
+            "sentence": ""
+        },
+        {
+            "question": "suppress",
+            "answers": "bastırmak",
+            "sentence": ""
+        },
+        {
+            "question": "trigger",
+            "answers": "başlatmak, tetiklemek",
+            "sentence": ""
+        },
+        {
+            "question": "swamp",
+            "answers": "bataklık",
+            "sentence": ""
+        },
+        {
+            "question": "predictor",
+            "answers": "belirleyici, ölçü",
+            "sentence": ""
+        },
+        {
+            "question": "nutrient",
+            "answers": "besin, gıda, besleyici",
+            "sentence": ""
+        },
+        {
+            "question": "subconscious",
+            "answers": "bilinçaltı",
+            "sentence": ""
+        },
+        {
+            "question": "adjacent",
+            "answers": "bitişik olan",
+            "sentence": ""
+        },
+        {
+            "question": "congestion",
+            "answers": "tıkanıklık, sıkışıklık",
+            "sentence": ""
+        },
+        {
+            "question": "longitude",
+            "answers": "boylam, meridyen",
+            "sentence": ""
+        },
+        {
+            "question": "insecticide",
+            "answers": "böcek ilacı",
+            "sentence": ""
+        },
+        {
+            "question": "deteriorate",
+            "answers": "bozulmak, kötüleşmek",
+            "sentence": ""
+        },
+        {
+            "question": "evaporation",
+            "answers": "buharlaşma",
+            "sentence": ""
+        },
+        {
+            "question": "glacier",
+            "answers": "buzul",
+            "sentence": ""
+        },
+        {
+            "question": "catastrophe",
+            "answers": "büyük felaket",
+            "sentence": ""
+        },
+        {
+            "question": "thrive",
+            "answers": "büyümek, gelişmek",
+            "sentence": ""
+        },
+        {
+            "question": "species",
+            "answers": "canlı türleri",
+            "sentence": ""
+        },
+        {
+            "question": "brisk",
+            "answers": "canlı, hareketli",
+            "sentence": ""
+        },
+        {
+            "question": "circumstance",
+            "answers": " koşul, durum",
+            "sentence": ""
+        },
+        {
+            "question": "gravel",
+            "answers": "çakıl",
+            "sentence": ""
+        },
+        {
+            "question": "collision",
+            "answers": "çarpışma",
+            "sentence": ""
+        },
+        {
+            "question": "crack",
+            "answers": "çatlak, çatlamak",
+            "sentence": ""
+        },
+        {
+            "question": "nucleus",
+            "answers": "çekirdek",
+            "sentence": ""
+        },
+        {
+            "question": "traction",
+            "answers": "çekme, çekilme",
+            "sentence": ""
+        },
+        {
+            "question": "precipitation",
+            "answers": "çökelme, yere düşme, yağma",
+            "sentence": ""
+        },
+        {
+            "question": "resistant",
+            "answers": "dayanıklı, dirençli",
+            "sentence": ""
+        },
+        {
+            "question": "empirical",
+            "answers": "deneysel",
+            "sentence": ""
+        },
+        {
+            "question": "seabed",
+            "answers": "deniz dibi",
+            "sentence": ""
+        },
+        {
+            "question": "profound",
+            "answers": "derin, engin, geniş",
+            "sentence": ""
+        },
+        {
+            "question": "era",
+            "answers": "devir, çağ",
+            "sentence": ""
+        },
+        {
+            "question": "gigantic",
+            "answers": "devasa, çok büyük",
+            "sentence": ""
+        },
+        {
+            "question": "polar bear",
+            "answers": "kutup ayısı",
+            "sentence": ""
+        },
+        {
+            "question": "polar region",
+            "answers": "kutup bölgesi",
+            "sentence": ""
+        }
+
+        
+    ]
+}

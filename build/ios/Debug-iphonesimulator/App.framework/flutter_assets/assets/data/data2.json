@@ -1,0 +1,497 @@
+{
+    "questions": [
+        {
+            "question": "stage ",
+            "answers": "aşama, sahne ",
+            "sentence": ""
+        },
+        {
+            "question": "relationship ",
+            "answers": "ilişki ",
+            "sentence": ""
+        },
+        {
+            "question": "force ",
+            "answers": "kuvvet, zorlamak ",
+            "sentence": ""
+        },
+        {
+            "question": "therefore ",
+            "answers": "bu yüzden ",
+            "sentence": ""
+        },
+        {
+            "question": "accessible ",
+            "answers": "erişilebilir ",
+            "sentence": ""
+        },
+        {
+            "question": "connection ",
+            "answers": "bağlantı ",
+            "sentence": ""
+        },
+        {
+            "question": "predominantly ",
+            "answers": "ağırlıklı olarak ",
+            "sentence": ""
+        },
+        {
+            "question": "flee ",
+            "answers": "kaçmak ",
+            "sentence": ""
+        },
+        {
+            "question": "thorough ",
+            "answers": "titiz, kapsamlı, detaylı ",
+            "sentence": ""
+        },
+        {
+            "question": "barren ",
+            "answers": "çorak ",
+            "sentence": ""
+        },
+        {
+            "question": "teamwork ",
+            "answers": "takım çalışması ",
+            "sentence": ""
+        },
+        {
+            "question": "river ",
+            "answers": "nehir ",
+            "sentence": ""
+        },
+        {
+            "question": "primitive ",
+            "answers": "ilkel ",
+            "sentence": ""
+        },
+        {
+            "question": "great ",
+            "answers": "harika, büyük ",
+            "sentence": ""
+        },
+        {
+            "question": "unemployment ",
+            "answers": "işsizlik ",
+            "sentence": ""
+        },
+        {
+            "question": "tail",
+            "answers": "kuyruk",
+            "sentence": ""
+        },
+        {
+            "question": "drug (n)",
+            "answers": "ilaç | uyuşturucu",
+            "sentence": ""
+        },
+        {
+            "question": "research (n)",
+            "answers": "araştırma",
+            "sentence": ""
+        },
+        {
+            "question": "researcher (n) ",
+            "answers": "araştırmacı",
+            "sentence": ""
+        },
+        {
+            "question": "ridiculous",
+            "answers": "absurd, saçma",
+            "sentence": ""
+        },
+        {
+            "question": "hasten",
+            "answers": "acele etmek, ettirmek",
+            "sentence": ""
+        },
+        {
+            "question": "reveal",
+            "answers": "açığa çıkarma,",
+            "sentence": ""
+        },
+        {
+            "question": "open-minded",
+            "answers": "açık fikirli",
+            "sentence": ""
+        },
+        {
+            "question": "frank",
+            "answers": "açık sözlü, içten, samimi",
+            "sentence": ""
+        },
+        {
+            "question": "obvious",
+            "answers": "açık, anlaşılır, ortada",
+            "sentence": ""
+        },
+        {
+            "question": "apparent",
+            "answers": "açık, apaçık, belirli",
+            "sentence": ""
+        },
+        {
+            "question": "explicit",
+            "answers": "açık",
+            "sentence": ""
+        },
+        {
+            "question": "dedicate",
+            "answers": "adamak; ithaf etmek",
+            "sentence": ""
+        },
+        {
+            "question": "candidate",
+            "answers": "aday",
+            "sentence": ""
+        },
+        {
+            "question": "nomination",
+            "answers": "adaylık",
+            "sentence": ""
+        },
+        {
+            "question": "notorious",
+            "answers": "adı çıkmış, kötü şöhretli",
+            "sentence": ""
+        },
+        {
+            "question": "step",
+            "answers": "adım, basamak",
+            "sentence": ""
+        },
+        {
+            "question": "judge",
+            "answers": "yargılamak",
+            "sentence": ""
+        },
+        {
+            "question": "creative",
+            "answers": "yaratıcı",
+            "sentence": ""
+        },
+        {
+            "question": "feasible",
+            "answers": "yapılabilir, mümkün",
+            "sentence": ""
+        },
+        {
+            "question": "structure",
+            "answers": "yapı",
+            "sentence": ""
+        },
+        {
+            "question": "clammy",
+            "answers": "yapış yapış; soğuk nemli",
+            "sentence": ""
+        },
+        {
+            "question": "impartial",
+            "answers": "yansız",
+            "sentence": ""
+        },
+        {
+            "question": "inaccurate",
+            "answers": "yanlış",
+            "sentence": ""
+        },
+        {
+            "question": "approach",
+            "answers": "yaklaşım, tarz",
+            "sentence": ""
+        },
+        {
+            "question": "presume",
+            "answers": "varsaymak",
+            "sentence": ""
+        },
+        {
+            "question": "existence",
+            "answers": "varlık",
+            "sentence": ""
+        },
+        {
+            "question": "supremacy",
+            "answers": "üstünlük, egemenlik",
+            "sentence": ""
+        },
+        {
+            "question": "predominate",
+            "answers": "üstün olmak, hakim olmak",
+            "sentence": ""
+        },
+        {
+            "question": "reputation",
+            "answers": "ün, itibar",
+            "sentence": ""
+        },
+        {
+            "question": "desperate",
+            "answers": "ümitsiz",
+            "sentence": ""
+        },
+        {
+            "question": "compromise",
+            "answers": "uzlaşmak",
+            "sentence": ""
+        },
+       
+        {
+            "question": "adapt",
+            "answers": "uyum sağlamak",
+            "sentence": ""
+        },
+        {
+            "question": "embarrassment",
+            "answers": "utanma, mahcubiyet",
+            "sentence": ""
+        },
+        {
+            "question": "unreachable",
+            "answers": "ulaşılamaz",
+            "sentence": ""
+        },
+        {
+            "question": "cliff",
+            "answers": "uçurum, sarp kayalık",
+            "sentence": ""
+        },
+        {
+            "question": "consumer",
+            "answers": "tüketici",
+            "sentence": ""
+        },
+        {
+            "question": "seize",
+            "answers": "ele geçirmek, yakalamak",
+            "sentence": ""
+        },
+        {
+            "question": "coherent",
+            "answers": "tutarlı",
+            "sentence": ""
+        },
+        {
+            "question": "victory",
+            "answers": "zafer",
+            "sentence": ""
+        },
+        {
+            "question": "limp",
+            "answers": "topallamak, aksamak",
+            "sentence": ""
+        },
+        {
+            "question": "seed",
+            "answers": "tohum",
+            "sentence": ""
+        },
+        {
+            "question": "commerce",
+            "answers": "ticaret",
+            "sentence": ""
+        },
+        {
+            "question": "scratch",
+            "answers": "tırmalamak, kazımak, kaşınmak",
+            "sentence": ""
+        },
+        {
+            "question": "medicine",
+            "answers": "tıp, ilaç",
+            "sentence": ""
+        },
+        {
+            "question": "confirm",
+            "answers": "onaylamak",
+            "sentence": ""
+        },
+        {
+            "question": "examine",
+            "answers": "tetkik, muayene etmek, sorguya çekmek",
+            "sentence": ""
+        },
+        {
+            "question": "constitute",
+            "answers": "tesis etmek; tayin etmek",
+            "sentence": ""
+        },
+        {
+            "question": "attempt",
+            "answers": "teşebbüs etmek, denemek",
+            "sentence": ""
+        },
+        {
+            "question": "coincidence",
+            "answers": "tesadüf",
+            "sentence": ""
+        },
+        {
+            "question": "abandon",
+            "answers": "terk etmek, vazgeçmek, bırakmak",
+            "sentence": ""
+        },
+        {
+            "question": "promote",
+            "answers": "terfi ettirmek",
+            "sentence": ""
+        },
+        {
+            "question": "promotion",
+            "answers": "terfi",
+            "sentence": ""
+        },
+        {
+            "question": "hesitate",
+            "answers": "tereddüt etmek, çekimsemek",
+            "sentence": ""
+        },
+        {
+            "question": "represent",
+            "answers": "temsil etme",
+            "sentence": ""
+        },
+        {
+            "question": "purify",
+            "answers": "temizlemek, arındırmak, saflaştırmak",
+            "sentence": ""
+        },
+        {
+            "question": "base",
+            "answers": "temel, esas",
+            "sentence": ""
+        },
+        {
+            "question": "wheel",
+            "answers": "tekerlek",
+            "sentence": ""
+        },
+        {
+            "question": "hazardous",
+            "answers": "tehlikeli, zararlı",
+            "sentence": ""
+        },
+        {
+            "question": "precaution",
+            "answers": "precaution",
+            "sentence": ""
+        },
+        {
+            "question": "incurable",
+            "answers": "tedavi edilmez, çaresiz",
+            "sentence": ""
+        },
+        {
+            "question": "supplier",
+            "answers": "tedarikçi",
+            "sentence": ""
+        },
+        {
+            "question": "congratulate",
+            "answers": "tebrik etmek",
+            "sentence": ""
+        },
+        {
+            "question": "discuss",
+            "answers": "tartışma, münazara etmek",
+            "sentence": ""
+        },
+        {
+            "question": "approval",
+            "answers": "tasvip, onay; resmi izin",
+            "sentence": ""
+        },
+        {
+            "question": "dispute",
+            "answers": "tartışma",
+            "sentence": ""
+        },
+        {
+            "question": "testimony",
+            "answers": "tanıklık, ifade",
+            "sentence": ""
+        },
+        {
+            "question": "accessory",
+            "answers": "tamamlayıcı",
+            "sentence": ""
+        },
+        {
+            "question": "utterly",
+            "answers": "tamamen",
+            "sentence": ""
+        },
+        {
+            "question": "profound",
+            "answers": "tam, eksiksiz, derin",
+            "sentence": ""
+        },
+        {
+            "question": "precisely",
+            "answers": "kesinlikle",
+            "sentence": ""
+        },
+        {
+            "question": "admirable",
+            "answers": "takdire değer",
+            "sentence": ""
+        },
+        {
+            "question": "anticipate",
+            "answers": "tahmin etmek, ve ona göre davranmak",
+            "sentence": ""
+        },
+        {
+            "question": "prediction",
+            "answers": "tahmin",
+            "sentence": ""
+        },
+        {
+            "question": "suspect",
+            "answers": "şüpheli",
+            "sentence": ""
+        },
+        {
+            "question": "doubt",
+            "answers": "şüphe, kuşku",
+            "sentence": ""
+        },
+        {
+            "question": "swell",
+            "answers": "şişmek, kabarmak; artmak",
+            "sentence": ""
+        },
+        {
+            "question": "complaint",
+            "answers": "şikayet etmek",
+            "sentence": ""
+        },
+        {
+            "question": "poetic",
+            "answers": "şiirsel",
+            "sentence": ""
+        },
+        {
+            "question": "urge",
+            "answers": "şiddetli arzu, tutku",
+            "sentence": ""
+        },
+        {
+            "question": "vehemently",
+            "answers": "şiddetle, hararetli bir şekilde",
+            "sentence": ""
+        },
+        {
+            "question": "enthusiastically",
+            "answers": "şevkle, hararetle",
+            "sentence": ""
+        },
+        {
+            "question": "shape",
+            "answers": "şekil",
+            "sentence": ""
+        }
+       
+        
+    ]
+}
