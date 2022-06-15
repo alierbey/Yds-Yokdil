@@ -82,6 +82,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "yds_yokdil"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
