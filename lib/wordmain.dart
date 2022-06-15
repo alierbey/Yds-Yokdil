@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:yds_yokdil/wordmainsecond.dart';
+import 'package:flutter/services.dart';
 import 'words.dart';
 import 'constant.dart';
 import 'dart:convert';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:purchases_flutter/purchases_flutter.dart';
+import 'dart:io' show Platform;
+import 'satinal.dart';
 
 class WordMain extends StatefulWidget {
   int whSection = 0;
@@ -16,6 +21,58 @@ class WordMain extends StatefulWidget {
 }
 
 class _WordMainState extends State<WordMain> {
+  PurchaserInfo purchaserInfo;
+
+  Future<void> initPlatformState() async {
+    await Purchases.setDebugLogsEnabled(true);
+    await Purchases.setup("appl_HKMOsgBnRRykUfiWIMhBDMcqsHY");
+    purchaserInfo = await Purchases.getPurchaserInfo();
+  }
+
+  Future<bool> userIsPremium() async {
+    purchaserInfo = await Purchases.getPurchaserInfo();
+    return purchaserInfo.entitlements.all["premium"] != null &&
+        purchaserInfo.entitlements.all["premium"].isActive;
+  }
+
+  Future<void> makePurchases(Package package) async {
+    try {
+      purchaserInfo = await Purchases.purchasePackage(package);
+      print(purchaserInfo);
+    } on PlatformException catch (e) {
+      var errorCode = PurchasesErrorHelper.getErrorCode(e);
+      if (errorCode != PurchasesErrorCode.purchaseCancelledError) {
+        print("########");
+        print(e.message);
+        // Scaffold.of(context).showSnackBar(SnackBar(content: Text(e.message)));
+      }
+    }
+  }
+
+  String tamamlandi = "";
+  List tamamlananListem = [];
+
+  _veriOku() async {
+    SharedPreferences pref = await SharedPreferences.getInstance();
+    tamamlandi = pref.getString("tamamlandi");
+    print(" Tamamlananlar :  $tamamlandi");
+
+    if (tamamlandi != null) {
+      tamamlananListem = tamamlandi.split(",");
+      print(tamamlananListem);
+    }
+
+    setState(() {
+      // print("fontRenk");
+    });
+  }
+
+  _veriKaydet() async {
+    SharedPreferences pref = await SharedPreferences.getInstance();
+    // await pref.setString("tamamlandi", tamamlandi + ",2");
+    // print("Tamamlanan Kaydedildi");
+  }
+
   var jsonResult;
 
   List sentence;
@@ -45,11 +102,34 @@ class _WordMainState extends State<WordMain> {
     }
   }
 
+  bool kontrol(i) {
+    if (tamamlandi == null) {
+      return false;
+    } else {
+      return tamamlandi.contains(i.toString());
+    }
+  }
+
+  bool premiumKontrol(i) {
+    print("premium kontrole");
+    if (premiumUye == true) {
+      return false;
+    } else {
+      if (i > 2) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+  }
+
   @override
   void initState() {
     super.initState();
     print(widget.whSection);
     print("wordmainde");
+    _veriOku();
+    _veriKaydet();
     getData();
   }
 
@@ -59,9 +139,10 @@ class _WordMainState extends State<WordMain> {
     double screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          "Kelimeler",
-          style: TextStyle(color: Colors.grey),
+        title: Center(
+          child: Text(
+            "",
+          ),
         ),
         backgroundColor: defaultBackgroundColor,
         elevation: 0,
@@ -69,7 +150,7 @@ class _WordMainState extends State<WordMain> {
           icon: new Icon(
             Icons.arrow_back_ios,
           ),
-          onPressed: () => Navigator.of(context).pop(),
+          onPressed: () => Navigator.pushNamed(context, "/homepage"),
           color: Colors.black,
         ),
       ),
@@ -110,8 +191,11 @@ class _WordMainState extends State<WordMain> {
                       children: [
                         Expanded(
                           child: MenuWidget(
-                              text: (i + 1).toString(),
-                              whSection: widget.whSection),
+                            text: (i + 1).toString(),
+                            whSection: widget.whSection,
+                            tamammi: kontrol(i),
+                            acikmi: premiumKontrol(i),
+                          ),
                         ),
                       ],
                     ),
@@ -126,17 +210,47 @@ class _WordMainState extends State<WordMain> {
 }
 
 class MenuWidget extends StatelessWidget {
-  const MenuWidget({
+  MenuWidget({
     Key key,
     @required this.text,
+    @required this.tamammi,
     @required this.whSection,
+    @required this.acikmi,
   }) : super(key: key);
 
   final String text;
   final int whSection;
+  final bool tamammi;
+  final bool acikmi;
+
+  PurchaserInfo purchaserInfo;
 
   @override
   Widget build(BuildContext context) {
+    Future<void> showPaywall() async {
+      print("satın alma işlemi başlatıldı.bbb.");
+      Offerings offerings = await Purchases.getOfferings();
+      if (offerings.current != null && offerings.current.monthly != null) {
+        print("icerdeyim");
+        final currentMonthlyProduct = offerings.current.monthly.product;
+        showDialog(
+            context: context,
+            builder: (_) => AlertDialog(
+                  title: Text(currentMonthlyProduct.description),
+                  content: Row(
+                    children: [Text(currentMonthlyProduct.priceString)],
+                  ),
+                  actions: [
+                    RaisedButton(
+                        onPressed: () async {
+                          // await makePurchases(offerings.current.monthly);
+                        },
+                        child: Text('Buy'))
+                  ],
+                ));
+      }
+    }
+
     var screenHeight = MediaQuery.of(context).size.height;
     var screenWidth = MediaQuery.of(context).size.width;
     return Padding(
@@ -148,18 +262,71 @@ class MenuWidget extends StatelessWidget {
           color: Colors.white,
           padding: EdgeInsets.all(1),
           onPressed: () {
-            whSentenceGroup = int.parse(text) - 1;
-            // Navigator.pushNamed(context, "/wordsmainsecond");
-            Navigator.of(context).pushReplacement(MaterialPageRoute(
-                builder: (context) => WordMainSecond(
-                    kelimeGrubu: whSentenceGroup, whSection: whSection)));
+            if (!acikmi) {
+              whSentenceGroup = int.parse(text) - 1;
+              // Navigator.pushNamed(context, "/wordsmainsecond");
+
+              Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => WordMainSecond(
+                          kelimeGrubu: whSentenceGroup, whSection: whSection)));
+              // Navigator.of(context).pushReplacement(MaterialPageRoute(
+              //     builder: (context) => WordMainSecond(
+              //         kelimeGrubu: whSentenceGroup, whSection: whSection)));
+
+            } else {
+              print("premium degil");
+
+              showAlertDialog(BuildContext context) {
+                // set up the button
+                // set up the buttons
+                Widget cancelButton = TextButton(
+                  child: Text("Vazgeç"),
+                  onPressed: () {
+                    Navigator.of(context).pop();
+                  },
+                );
+                Widget continueButton = TextButton(
+                  child: Text("Premium Ol"),
+                  onPressed: () {
+                    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => SatilAlPage()));
+
+                    // ustSinif.ustSinif.showPaywall();
+                  },
+                );
+
+                // set up the AlertDialog
+                AlertDialog alert = AlertDialog(
+                  title: Text("Premium Üye Özelliği"),
+                  content: Text(
+                      "Kilitli bölümleri açmak için premium üye olmalısınız. Premium üyelik sadece 15 tl dir."),
+                  actions: [
+                    cancelButton,
+                    continueButton,
+                  ],
+                );
+
+                // show the dialog
+                showDialog(
+                  context: context,
+                  builder: (BuildContext context) {
+                    return alert;
+                  },
+                );
+              }
+
+              showAlertDialog(context);
+            }
           },
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(2)),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Padding(padding: EdgeInsets.only(top: 2)),
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
                     child: Padding(
@@ -174,6 +341,22 @@ class MenuWidget extends StatelessWidget {
                       ),
                     ),
                   ),
+                  Visibility(
+                    visible: tamammi,
+                    child: Container(
+                      child: Padding(
+                          padding: const EdgeInsets.fromLTRB(20, 5, 10, 5),
+                          child: Icon(Icons.check)),
+                    ),
+                  ),
+                  Visibility(
+                    visible: acikmi,
+                    child: Container(
+                      child: Padding(
+                          padding: const EdgeInsets.fromLTRB(20, 5, 10, 5),
+                          child: Icon(Icons.lock)),
+                    ),
+                  )
                 ],
               ),
             ],

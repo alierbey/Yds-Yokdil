@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'words.dart';
 import 'constant.dart';
 import 'dart:convert';
+import 'wordmain.dart';
 
 class WordMainSecond extends StatefulWidget {
   int kelimeGrubu;
@@ -68,7 +69,7 @@ class _WordMainSecondState extends State<WordMainSecond> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Kelimeler",
+          "",
           style: TextStyle(color: Colors.grey),
         ),
         backgroundColor: defaultBackgroundColor,
@@ -77,7 +78,13 @@ class _WordMainSecondState extends State<WordMainSecond> {
           icon: new Icon(
             Icons.arrow_back_ios,
           ),
-          onPressed: () => Navigator.of(context).pop(),
+          onPressed: () => Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (context) => WordMain(
+                      whSection: 0,
+                    )),
+          ),
           color: Colors.black,
         ),
       ),
@@ -119,27 +126,6 @@ class _WordMainSecondState extends State<WordMainSecond> {
                 ),
                 child: Column(
                   children: [
-                    for (var i in kelimeler)
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Container(
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                                color: Colors.black12,
-                                borderRadius: BorderRadius.circular(5)),
-                            width: MediaQuery.of(context).size.width / 1.5,
-                            margin: EdgeInsets.all(3),
-                            child: Text(
-                              i,
-                              style: TextStyle(fontSize: 14),
-                            ),
-                          ),
-                        ],
-                      ),
-                    SizedBox(
-                      height: 20,
-                    ),
                     TextButton(
                       onPressed: () {
                         // whSentenceGroup = widget.kelimeGrubu;
@@ -168,6 +154,31 @@ class _WordMainSecondState extends State<WordMainSecond> {
                           ),
                         ),
                       ),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Text("Bu grupta olan kelimeler"),
+                    for (var i in kelimeler)
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            padding: EdgeInsets.all(10),
+                            decoration: BoxDecoration(
+                                color: Colors.black12,
+                                borderRadius: BorderRadius.circular(5)),
+                            width: MediaQuery.of(context).size.width / 1.5,
+                            margin: EdgeInsets.all(3),
+                            child: Text(
+                              i,
+                              style: TextStyle(fontSize: 14),
+                            ),
+                          ),
+                        ],
+                      ),
+                    SizedBox(
+                      height: 20,
                     ),
                   ],
                 ),

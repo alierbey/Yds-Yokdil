@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:yds_yokdil/blok.dart';
 import 'package:yds_yokdil/constant.dart';
 import 'dart:math';
 import 'dart:convert';
 import 'package:yds_yokdil/homepage.dart';
+import 'package:yds_yokdil/wordmain.dart';
+import 'package:yds_yokdil/wordmainsecond.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:text_to_speech/text_to_speech.dart';
 
 class Word extends StatefulWidget {
   int kelimeGrubu;
@@ -20,6 +25,18 @@ class Word extends StatefulWidget {
 enum TtsState { playing, stopped, paused, continued }
 
 class _WordState extends State<Word> {
+  String tamamlandi = "";
+
+  _veriOku() async {
+    SharedPreferences pref = await SharedPreferences.getInstance();
+    tamamlandi = pref.getString("tamamlandi");
+    print(" Tamamlananlar :  $tamamlandi");
+
+    setState(() {
+      // print("fontRenk");
+    });
+  }
+
   int _hangiCumle = 0;
 
   List<dynamic> data;
@@ -50,9 +67,23 @@ class _WordState extends State<Word> {
     }
   }
 
+  _veriKaydet(i) async {
+    SharedPreferences pref = await SharedPreferences.getInstance();
+
+    if (tamamlandi != null) {
+      await pref.setString("tamamlandi", tamamlandi + "," + i.toString());
+    } else {
+      await pref.setString("tamamlandi", i.toString());
+    }
+
+    print("--> kelime tamamlama başarılı Kaydedildi " + i.toString());
+  }
+
   @override
   void initState() {
     setState(() {
+      print("words.dart");
+      _veriOku();
       fonksiyon();
       randomList = shuffle(ids);
       print(randomList);
@@ -61,18 +92,26 @@ class _WordState extends State<Word> {
 
   @override
   Widget build(BuildContext context) {
+    TextToSpeech tts = TextToSpeech();
+    List language = ['en-US', 'tr-TR'];
+
     double windowSizeHeight = MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Kelimeler",
+          "",
           style: TextStyle(color: Colors.grey),
         ),
         leading: new IconButton(
           icon: new Icon(
             Icons.arrow_back_ios,
           ),
-          onPressed: () => Navigator.of(context).pop(),
+          onPressed: () => Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(
+                  builder: (context) => WordMainSecond(
+                      kelimeGrubu: whSentenceGroup,
+                      whSection: widget.whSection))),
           color: Colors.black,
         ),
         backgroundColor: Color(0xffEEF3F7),
@@ -143,10 +182,10 @@ class _WordState extends State<Word> {
                   child: Padding(
                     padding: const EdgeInsets.fromLTRB(10, 30, 10, 30),
                     child: FutureBuilder(
-                        future: DefaultAssetBundle.of(context).loadString(
-                            "assets/data/data" +
-                                widget.whSection.toString() +
-                                ".json"),
+                        future: DefaultAssetBundle.of(context)
+                            .loadString("assets/data/data.json"),
+                        // widget.whSection.toString() +
+                        // ".json"),
                         builder: (context, snapshot) {
                           // Decode the JSON
                           var new_data = json.decode(snapshot.data.toString());
@@ -154,8 +193,23 @@ class _WordState extends State<Word> {
                           if (new_data == null) {
                             return CircularProgressIndicator();
                           } else if (_hangiCumle == 15) {
+                            _veriKaydet(whSentenceGroup);
+                            print("-------BURADA----");
                             return FinishWidget();
                           } else {
+                            print("yukle");
+                            print(
+                              new_data["questions"][randomList[_hangiCumle]]
+                                  ["question"],
+                            );
+                            String kelime = new_data["questions"]
+                                [randomList[_hangiCumle]]["question"];
+
+                            if (sesAcikMi) {
+                              tts.setLanguage(language[0]);
+                              tts.speak(kelime);
+                            }
+
                             return Column(
                               children: [
                                 Column(
@@ -180,6 +234,10 @@ class _WordState extends State<Word> {
                                         onPressed: () {
                                           setState(() {
                                             _hangiCumle++;
+
+                                            if (_hangiCumle == 14) {
+                                              _veriKaydet(whSentenceGroup);
+                                            }
                                           });
                                         },
                                         padding: EdgeInsets.all(20),
@@ -338,10 +396,24 @@ class NewWidget extends StatelessWidget {
           onPressed: () {
             // Navigator.pushNamed(context, "/");
             if (text == "Tekrar") {
+              hangiCumle = 0;
+
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => Word()),
+                MaterialPageRoute(
+                    builder: (context) => WordMain(
+                          whSection: 0,
+                        )),
               );
+
+              // Navigator.push(
+              //   context,
+              //   MaterialPageRoute(
+              //       builder: (context) => Word(
+              //             kelimeGrubu: null,
+              //             whSection: null,
+              //           )),
+              // );
             } else {
               Navigator.push(
                 context,

@@ -1,9 +1,11 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:yds_yokdil/constant.dart';
 import 'dart:math';
 import 'dart:convert';
 import 'package:audioplayers/audioplayers.dart';
-
+import 'package:text_to_speech/text_to_speech.dart';
 import 'package:yds_yokdil/homepage.dart';
 
 class Question extends StatefulWidget {
@@ -121,9 +123,16 @@ class _QuestionState extends State<Question> {
   int secenek2 = 2;
   int secenek3 = 2;
 
+  int isCevap = 0;
+  bool isAnswerSend = false;
+
   void cevap(int whCevap) {
+    print("Cevap Tıklandı");
+    isAnswerSend = true;
+
     if (randomList[_hangiCumle] == randomAnswerIds[whCevap]) {
       _audioCache.play('audio/correct.mp3');
+      isCevap = 1;
       islemYap(whCevap, 1);
 
       Future.delayed(const Duration(milliseconds: 1000), () {
@@ -135,6 +144,7 @@ class _QuestionState extends State<Question> {
       });
     } else {
       _audioCache.play('audio/wrong.mp3');
+      isCevap = 0;
       print("yanlış cevap");
 
       // yanlış cevap verilen sorunuyu listenin sonuna ekleyerek tekrar sorulmasını sağlayacağız.
@@ -166,6 +176,7 @@ class _QuestionState extends State<Question> {
       // Diğer soruya geçmemiz gerekiyor. Ve geçerken işaretlenen şıkları temizlememiz gerekiyor.
       Future.delayed(const Duration(milliseconds: 2500), () {
         setState(() {
+          isAnswerSend = false;
           print("sıfırlandı ve diğer soruya geçildi");
           secenek0 = 2;
           secenek1 = 2;
@@ -196,8 +207,12 @@ class _QuestionState extends State<Question> {
     }
   }
 
+  int konusma = 0;
   @override
   Widget build(BuildContext context) {
+    TextToSpeech tts = TextToSpeech();
+    List language = ['en-US', 'tr-TR'];
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
@@ -315,9 +330,7 @@ class _QuestionState extends State<Question> {
                             padding: const EdgeInsets.fromLTRB(10, 30, 10, 30),
                             child: FutureBuilder(
                                 future: DefaultAssetBundle.of(context)
-                                    .loadString('assets/data/data' +
-                                        widget.whSection.toString() +
-                                        '.json'),
+                                    .loadString('assets/data/data.json'),
                                 builder: (context, snapshot) {
                                   // Decode the JSON
                                   var new_data =
@@ -331,6 +344,69 @@ class _QuestionState extends State<Question> {
                                       whSentenceGrup: widget.whSentenceGroup,
                                     );
                                   } else {
+                                    print(new_data["questions"]
+                                        [randomList[_hangiCumle]]["question"]);
+                                    print("isCevap $isCevap");
+
+                                    if (isCevap == 0) {
+                                      print(">>>>>>>>>>>>>>>> cevap yanlış");
+                                      if (konusma == 0) {
+                                        print("-----> ilk konuşma");
+                                        String kelime = new_data["questions"]
+                                                [randomList[_hangiCumle]]
+                                            ["question"];
+                                        if (sesAcikMi) {
+                                          tts.setLanguage(language[0]);
+                                          tts.speak(kelime);
+                                        }
+
+                                        konusma++;
+                                      } else if (konusma < 3) {
+                                        print("-----> sonraki konuşma");
+                                        konusma++;
+                                      } else {
+                                        print("-----> sıfıra çektim");
+                                        konusma = 0;
+                                      }
+                                    } else {
+                                      print(">>>>>>>>>>>>>>>> cevap doğru");
+                                      if (konusma == 0) {
+                                        print("-----> ilk konuşma");
+                                        String kelime = new_data["questions"]
+                                                [randomList[_hangiCumle]]
+                                            ["question"];
+                                        if (sesAcikMi) {
+                                          tts.setLanguage(language[0]);
+                                          tts.speak(kelime);
+                                        }
+                                        konusma++;
+                                      } else if (konusma < 1) {
+                                        print("-----> sonraki konuşma");
+                                        konusma++;
+                                      } else {
+                                        print("-----> sıfıra çektim");
+                                        konusma = 0;
+                                      }
+                                    }
+
+                                    // if (konusma == 0) {
+                                    //   print("-----> ilk konuşma");
+                                    //   String kelime = new_data["questions"]
+                                    //       [randomList[_hangiCumle]]["question"];
+                                    //   tts.setLanguage(language[0]);
+                                    //   tts.speak(kelime);
+                                    //   konusma++;
+                                    // } else if (konusma < 3) {
+
+                                    //   print("-----> sonraki konuşma");
+                                    //   konusma++;
+                                    // } else {
+                                    //   print("-----> sıfıra çektim");
+                                    //   konusma = 0;
+                                    // }
+
+                                    print("konusma $konusma");
+
                                     return Column(
                                       children: [
                                         Container(
@@ -352,7 +428,9 @@ class _QuestionState extends State<Question> {
                                           child: FlatButton(
                                             onPressed: () {
                                               setState(() {
-                                                cevap(0);
+                                                if (!isAnswerSend) {
+                                                  cevap(0);
+                                                }
                                               });
                                             },
                                             padding: EdgeInsets.all(20),
@@ -389,7 +467,9 @@ class _QuestionState extends State<Question> {
                                           child: FlatButton(
                                             onPressed: () {
                                               setState(() {
-                                                cevap(1);
+                                                if (!isAnswerSend) {
+                                                  cevap(1);
+                                                }
                                               });
                                             },
                                             padding: EdgeInsets.all(20),
@@ -425,7 +505,9 @@ class _QuestionState extends State<Question> {
                                           child: FlatButton(
                                             onPressed: () {
                                               setState(() {
-                                                cevap(2);
+                                                if (!isAnswerSend) {
+                                                  cevap(2);
+                                                }
                                               });
                                             },
                                             padding: EdgeInsets.all(20),
@@ -461,7 +543,9 @@ class _QuestionState extends State<Question> {
                                           child: FlatButton(
                                             onPressed: () {
                                               setState(() {
-                                                cevap(3);
+                                                if (!isAnswerSend) {
+                                                  cevap(3);
+                                                }
                                               });
                                             },
                                             padding: EdgeInsets.all(20),

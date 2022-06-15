@@ -189,69 +189,48 @@
         },
         {
             "question": "distortion",
-            "answers": 
-                "çarpıtma",
-               
+            "answers": "çarpıtma",
             "sentence": ""
         },
         {
             "question": "given that",
-            "answers": 
-                "bakıldığında",
-           
+            "answers": "bakıldığında",
             "sentence": ""
         },
         {
             "question": "expose to",
-            "answers": 
-                "maruz bırakmak",
-              
+            "answers": "maruz bırakmak",
             "sentence": ""
            
         },
         {
             "question": "impact",
-            "answers": 
-                "etki",
-           
+            "answers": "etki",
             "sentence": ""
         },
         {
             "question": "recruitment",
-            "answers": 
-                "işe alma, iyileştirme",
-            
+            "answers": "işe alma, iyileştirme",
             "sentence": ""
         },
         {
             "question": "satisfactory",
-            "answers": 
-                "tatmin edici",
-             
+            "answers": "tatmin edici",
             "sentence": ""
         },
         {
             "question": "mainly",
-            "answers": 
-                "özellikle, başlıca, çoğu",
-          
+            "answers": "özellikle, başlıca, çoğu",
             "sentence": ""
         },
         {
             "question": "accustomed to",
-            "answers": 
-                "alışkın, alışmış",
-            
+            "answers": "alışık",
             "sentence": ""
         },
         {
             "question": "extraordinarily",
-            "answers": [
-                "alışılmadık bir biçimde",
-                "istemsizce",
-                "sürdürülebilir",
-                "gönülsüz bir şekilde"
-            ],
+            "answers": "olağanüstü",
             "correctIndex": 0,
             "sentence": "Although some medical remedies were quite sensible, others were extraordinarily weird.",
             "sentenceArray": [
@@ -268,27 +247,17 @@
                 "diğerleri",
                 "olağanüstü derecede tuhaftı."
             ],
-            "correctTranslate": [0, 1, 2, 3 , 4]
+            "correctTranslate": [0, 1, 2, 3, 4]
         },
         {
             "question": "aid",
-            "answers": [
-                "yardımcı olmak",
-                "işaret etmek",
-                "dikkatlice",
-                "ırksal"
-            ],
+            "answers": "yardımcı olmak",
             "correctIndex": 0,
             "sentence": ""
         },
         {
             "question": "cease",
-            "answers": [
-                "durdurmak",
-                "sürüklemek",
-                "kaçmak",
-                "sızmak"
-            ],
+            "answers": "dinmek",
             "correctIndex": 0,
             "sentence": "They decided to cease financial support.",
             "sentenceArray": [
@@ -307,23 +276,17 @@
         },
         {
             "question": "subsidy",
-            "answers": 
-                "para desteği, devlet desteği",
-            
+            "answers": "para desteği, devlet desteği",
             "sentence": ""
         },
         {
             "question": "exist",
-            "answers": 
-                "var olmak, bulunmak",
-             
+            "answers": "var olmak, bulunmak",
             "sentence": ""
         },
         {
             "question": "in charge of",
-            "answers": 
-                "sorumlu, yükümlü",
-           
+            "answers": "sorumlu, yükümlü",
             "sentence": ""
         },
         {
@@ -342,16 +305,13 @@
         },
         {
             "question": "cope with",
-            "answers": 
-                "ile uğraşmak",
+            "answers": "ile uğraşmak",
              
             "sentence": ""
         },
         {
             "question": "decline",
-            "answers": 
-                "azalmak, düşmek",
-                
+            "answers": "azalmak, düşmek",
             "sentence": ""
         },{
             "question": "turmoil",

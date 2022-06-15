@@ -4,13 +4,18 @@
 
 // ignore_for_file: directives_ordering
 // ignore_for_file: lines_longer_than_80_chars
+// ignore_for_file: depend_on_referenced_packages
 
 import 'package:audioplayers/web/audioplayers_web.dart';
+import 'package:shared_preferences_web/shared_preferences_web.dart';
+import 'package:text_to_speech_web/text_to_speech_web.dart';
 
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 
 // ignore: public_member_api_docs
 void registerPlugins(Registrar registrar) {
   AudioplayersPlugin.registerWith(registrar);
+  SharedPreferencesPlugin.registerWith(registrar);
+  TextToSpeechWeb.registerWith(registrar);
   registrar.registerMessageHandler();
 }

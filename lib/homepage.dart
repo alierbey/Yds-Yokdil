@@ -1,23 +1,175 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:yds_yokdil/blockmain.dart';
+import 'package:yds_yokdil/similarwords.dart';
 import 'package:yds_yokdil/wordmain.dart';
 import 'package:yds_yokdil/yokdilmain.dart';
 import 'constant.dart';
 import 'questionmain.dart';
-import 'package:in_app_purchase/in_app_purchase.dart';
+import 'package:purchases_flutter/purchases_flutter.dart';
+import 'dart:io' show Platform;
+import 'satinal.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 final String testID = "yds_premium";
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  PurchaserInfo purchaserInfo;
+
+  IconData iconum = Icons.volume_up;
+
+  void sesDurumuDegistir() {
+    print("icon değişmesi lazım");
+    setState(() {
+      if (sesAcikMi) {
+        iconum = Icons.volume_up;
+      } else {
+        iconum = Icons.volume_off;
+      }
+    });
+  }
+
+  SharedPreferences prefs;
+  void sesSharedDurumu() async {
+    prefs = await SharedPreferences.getInstance();
+    sesAcikMi = (prefs.getBool('sesAcikMi') ?? true);
+    sesDurumuDegistir();
+  }
+
+  Future<void> initPlatformState() async {
+    await Purchases.setDebugLogsEnabled(true);
+    await Purchases.setup("appl_HKMOsgBnRRykUfiWIMhBDMcqsHY");
+    purchaserInfo = await Purchases.getPurchaserInfo();
+    print("purchaserInfo $purchaserInfo");
+    userIsPremium();
+    premiumKontrol();
+  }
+
+  Future<bool> userIsPremium() async {
+    purchaserInfo = await Purchases.getPurchaserInfo();
+    return purchaserInfo.entitlements.all["premium"] != null &&
+        purchaserInfo.entitlements.all["premium"].isActive;
+  }
+
+  Future<void> showPaywall() async {
+    print("satın alma işlemi başlatıldı>>");
+    Offerings offerings = await Purchases.getOfferings();
+    if (offerings.current != null) {
+      print("icerdeyim");
+      // final currentMonthlyProduct = offerings.current.monthly.product;
+      final currentLifeTimeProduct = offerings.current.lifetime.product;
+
+      showDialog(
+          context: context,
+          builder: (_) => AlertDialog(
+                title: Text(currentLifeTimeProduct.description),
+                content: Row(
+                  children: [Text(currentLifeTimeProduct.priceString)],
+                ),
+                actions: [
+                  RaisedButton(
+                      onPressed: () async {
+                        await makePurchases(offerings.current.lifetime);
+                      },
+                      child: Text('Buy'))
+                ],
+              ));
+    }
+  }
+
+  Future<void> makePurchases(Package package) async {
+    try {
+      purchaserInfo = await Purchases.purchasePackage(package);
+      print(purchaserInfo);
+    } on PlatformException catch (e) {
+      var errorCode = PurchasesErrorHelper.getErrorCode(e);
+      if (errorCode != PurchasesErrorCode.purchaseCancelledError) {
+        print("########");
+        print(e.message);
+        // Scaffold.of(context).showSnackBar(SnackBar(content: Text(e.message)));
+      }
+    }
+  }
+
+  void premiumKontrol() async {
+    print("init state ici");
+    print(await userIsPremium());
+    premiumUye = await userIsPremium();
+    // premiumUye = true;
+    print("init state ici");
+  }
+
+  bool userIsPremiumMu = true;
+  @override
+  void initState() {
+    // TODO: implement initState
+    initPlatformState();
+    print("HomePage");
+    sesSharedDurumu();
+    super.initState();
+    // premiumKontrol();
+  }
+
   @override
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;
     double screenHeight = MediaQuery.of(context).size.height;
+
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: defaultBackgroundColor,
-        elevation: 0,
-      ),
+          backgroundColor: defaultBackgroundColor,
+          elevation: 0,
+          actions: <Widget>[
+            Padding(
+                padding: EdgeInsets.only(right: 20.0),
+                child: GestureDetector(
+                  onTap: () {
+                    var alert = AlertDialog(
+                      title: Text("Ses Durumu"),
+                      content: (sesAcikMi)
+                          ? Text("Sesi kapatmak istediğinize emin misiniz?")
+                          : Text("Sesi açmak istediğinize emin misiniz?"),
+                      actions: [
+                        TextButton(
+                            onPressed: () {
+                              Navigator.of(context).pop();
+                            },
+                            child: Text("Vazgeç")),
+                        TextButton(
+                            onPressed: () {
+                              print("icon değiştirildi");
+                              Navigator.of(context).pop();
+                              setState(() {
+                                if (sesAcikMi) {
+                                  prefs.setBool("sesAcikMi", false);
+                                  sesAcikMi = false;
+                                } else {
+                                  prefs.setBool("sesAcikMi", true);
+                                  sesAcikMi = true;
+                                }
+
+                                sesDurumuDegistir();
+                              });
+                            },
+                            child: Text("Onayla")),
+                      ],
+                    );
+
+                    showDialog(
+                        context: context,
+                        builder: (BuildContext context) => alert);
+                  },
+                  child: Icon(
+                    iconum,
+                    size: 26.0,
+                  ),
+                )),
+          ]),
       backgroundColor: defaultBackgroundColor,
       body: SingleChildScrollView(
         child: Padding(
@@ -124,6 +276,55 @@ class HomePage extends StatelessWidget {
                   ),
                 ],
               ),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Expanded(
+                    child: HomeMenuWidget(
+                      menuIcon: Icons.web_rounded,
+                      text: "Benzer Kelimeler",
+                      subText:
+                          "Benzer kelimeler sayesinde kelimeleri daha kolay akılda tutabileceksiniz.",
+                      menuSection: 3,
+                    ),
+                  ),
+                ],
+              ),
+              // Row(
+              //   children: [
+              //     TextButton(
+              //       onPressed: () async {
+              //         if (await userIsPremium()) {
+              //           // if (userIsPremiumMu) {
+              //           print("premium kullanıcı");
+              //           Navigator.of(context).push(MaterialPageRoute(
+              //               builder: (context) => WordMain(
+              //                     whSection: 0,
+              //                   )));
+              //         } else {
+              //           print("premium kullanıcı değil");
+              //           // Scaffold.of(context).showSnackBar(
+              //           //     SnackBar(content: Text("You aren't premium user")));
+              //         }
+              //       },
+              //       child: Text("kontrol"),
+              //     ),
+              //     TextButton(
+              //       onPressed: () {
+              //         showPaywall();
+              //       },
+              //       child: Text("satın al"),
+              //     ),
+              //     TextButton(
+              //       onPressed: () {
+              //         Navigator.of(context).push(MaterialPageRoute(
+              //             builder: (context) => SatilAlPage()));
+              //       },
+              //       child: Text("satın al sayfasi"),
+              //     )
+              //   ],
+              // )
             ],
           ),
         ),
@@ -177,6 +378,11 @@ class HomeMenuWidget extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(builder: (context) => BlockMain()),
+            );
+          } else if (menuSection == 3) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => SimilarWordsPage()),
             );
           }
         },
