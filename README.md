@@ -1,12 +1,7 @@
 # Yds Yökdil
 This project is a Flutter project.
 
-![N|](https://flask.palletsprojects.com/en/2.1.x/_images/flask-logo.png)
-
-
 Using the sqlite3 database.
-
-
 
 ## Features
 
