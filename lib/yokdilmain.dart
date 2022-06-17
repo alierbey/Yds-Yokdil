@@ -126,9 +126,13 @@ class HomeMenuWidget extends StatelessWidget {
     return Container(
       height: screenHeight * 0.26,
       margin: EdgeInsets.all(5),
-      child: FlatButton(
-        color: Colors.white,
-        padding: EdgeInsets.all(10),
+      child: ElevatedButton(
+        style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
+            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12.0),
+                    side: BorderSide(color: Colors.white)))),
         onPressed: () {
           if (menuSection == 0) {
             // Navigator.pushNamed(context, "/questionmain");
@@ -150,7 +154,6 @@ class HomeMenuWidget extends StatelessWidget {
             );
           }
         },
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
         child: Column(
           //mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,

@@ -60,6 +60,7 @@ class _QuestionState extends State<Question> {
   }
 
   List<dynamic> fonksiyonCevapMix() {
+    isAnswerSend = false;
     if (_hangiCumle < randomList.length) {
       print("---------- $_hangiCumle. ------------");
       randomAnswerIds = [];
@@ -425,7 +426,32 @@ class _QuestionState extends State<Question> {
                                         ),
                                         Padding(
                                           padding: const EdgeInsets.all(8.0),
-                                          child: FlatButton(
+                                          child: TextButton(
+                                            style: ButtonStyle(
+                                              padding: MaterialStateProperty
+                                                  .all<EdgeInsets>(
+                                                      EdgeInsets.all(10)),
+                                              backgroundColor: secenek0 == 2
+                                                  ? MaterialStateProperty.all<
+                                                      Color>(Colors.white)
+                                                  : secenek0 == 1
+                                                      ? MaterialStateProperty
+                                                          .all<Color>(
+                                                              Colors.lime)
+                                                      : MaterialStateProperty
+                                                          .all<Color>(
+                                                              Colors.red),
+                                              shape: MaterialStateProperty.all<
+                                                  RoundedRectangleBorder>(
+                                                RoundedRectangleBorder(
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          8.0),
+                                                  side: BorderSide(
+                                                      color: Colors.white),
+                                                ),
+                                              ),
+                                            ),
                                             onPressed: () {
                                               setState(() {
                                                 if (!isAnswerSend) {
@@ -433,16 +459,6 @@ class _QuestionState extends State<Question> {
                                                 }
                                               });
                                             },
-                                            padding: EdgeInsets.all(20),
-                                            shape: RoundedRectangleBorder(
-                                                borderRadius:
-                                                    BorderRadius.circular(10)),
-                                            color: secenek0 == 2
-                                                ? Colors.white
-                                                : secenek0 == 1
-                                                    ? Colors.lime
-                                                    : Colors.red,
-                                            // secenek0 ? Colors.lime : Colors.white,
                                             child: Padding(
                                               padding:
                                                   const EdgeInsets.all(8.0),
@@ -464,7 +480,32 @@ class _QuestionState extends State<Question> {
                                         ),
                                         Padding(
                                           padding: const EdgeInsets.all(8.0),
-                                          child: FlatButton(
+                                          child: ElevatedButton(
+                                            style: ButtonStyle(
+                                              padding: MaterialStateProperty
+                                                  .all<EdgeInsets>(
+                                                      EdgeInsets.all(10)),
+                                              backgroundColor: secenek1 == 2
+                                                  ? MaterialStateProperty.all<
+                                                      Color>(Colors.white)
+                                                  : secenek1 == 1
+                                                      ? MaterialStateProperty
+                                                          .all<Color>(
+                                                              Colors.lime)
+                                                      : MaterialStateProperty
+                                                          .all<Color>(
+                                                              Colors.red),
+                                              shape: MaterialStateProperty.all<
+                                                  RoundedRectangleBorder>(
+                                                RoundedRectangleBorder(
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          8.0),
+                                                  side: BorderSide(
+                                                      color: Colors.white),
+                                                ),
+                                              ),
+                                            ),
                                             onPressed: () {
                                               setState(() {
                                                 if (!isAnswerSend) {
@@ -472,15 +513,6 @@ class _QuestionState extends State<Question> {
                                                 }
                                               });
                                             },
-                                            padding: EdgeInsets.all(20),
-                                            shape: RoundedRectangleBorder(
-                                                borderRadius:
-                                                    BorderRadius.circular(10)),
-                                            color: secenek1 == 2
-                                                ? Colors.white
-                                                : secenek1 == 1
-                                                    ? Colors.lime
-                                                    : Colors.red,
                                             child: Padding(
                                               padding:
                                                   const EdgeInsets.all(8.0),
@@ -502,7 +534,32 @@ class _QuestionState extends State<Question> {
                                         ),
                                         Padding(
                                           padding: const EdgeInsets.all(8.0),
-                                          child: FlatButton(
+                                          child: ElevatedButton(
+                                            style: ButtonStyle(
+                                              padding: MaterialStateProperty
+                                                  .all<EdgeInsets>(
+                                                      EdgeInsets.all(10)),
+                                              backgroundColor: secenek2 == 2
+                                                  ? MaterialStateProperty.all<
+                                                      Color>(Colors.white)
+                                                  : secenek2 == 1
+                                                      ? MaterialStateProperty
+                                                          .all<Color>(
+                                                              Colors.lime)
+                                                      : MaterialStateProperty
+                                                          .all<Color>(
+                                                              Colors.red),
+                                              shape: MaterialStateProperty.all<
+                                                  RoundedRectangleBorder>(
+                                                RoundedRectangleBorder(
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          8.0),
+                                                  side: BorderSide(
+                                                      color: Colors.white),
+                                                ),
+                                              ),
+                                            ),
                                             onPressed: () {
                                               setState(() {
                                                 if (!isAnswerSend) {
@@ -510,15 +567,6 @@ class _QuestionState extends State<Question> {
                                                 }
                                               });
                                             },
-                                            padding: EdgeInsets.all(20),
-                                            shape: RoundedRectangleBorder(
-                                                borderRadius:
-                                                    BorderRadius.circular(10)),
-                                            color: secenek2 == 2
-                                                ? Colors.white
-                                                : secenek2 == 1
-                                                    ? Colors.lime
-                                                    : Colors.red,
                                             child: Padding(
                                               padding:
                                                   const EdgeInsets.all(8.0),
@@ -540,7 +588,32 @@ class _QuestionState extends State<Question> {
                                         ),
                                         Padding(
                                           padding: const EdgeInsets.all(8.0),
-                                          child: FlatButton(
+                                          child: ElevatedButton(
+                                            style: ButtonStyle(
+                                              padding: MaterialStateProperty
+                                                  .all<EdgeInsets>(
+                                                      EdgeInsets.all(10)),
+                                              backgroundColor: secenek3 == 2
+                                                  ? MaterialStateProperty.all<
+                                                      Color>(Colors.white)
+                                                  : secenek3 == 1
+                                                      ? MaterialStateProperty
+                                                          .all<Color>(
+                                                              Colors.lime)
+                                                      : MaterialStateProperty
+                                                          .all<Color>(
+                                                              Colors.red),
+                                              shape: MaterialStateProperty.all<
+                                                  RoundedRectangleBorder>(
+                                                RoundedRectangleBorder(
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          8.0),
+                                                  side: BorderSide(
+                                                      color: Colors.white),
+                                                ),
+                                              ),
+                                            ),
                                             onPressed: () {
                                               setState(() {
                                                 if (!isAnswerSend) {
@@ -548,15 +621,6 @@ class _QuestionState extends State<Question> {
                                                 }
                                               });
                                             },
-                                            padding: EdgeInsets.all(20),
-                                            shape: RoundedRectangleBorder(
-                                                borderRadius:
-                                                    BorderRadius.circular(10)),
-                                            color: secenek3 == 2
-                                                ? Colors.white
-                                                : secenek3 == 1
-                                                    ? Colors.lime
-                                                    : Colors.red,
                                             child: Padding(
                                               padding:
                                                   const EdgeInsets.all(8.0),
@@ -660,9 +724,7 @@ class NewWidget extends StatelessWidget {
         height: screenHeight * 0.32,
         padding: EdgeInsets.symmetric(horizontal: 10),
         //margin: EdgeInsets.all(5),
-        child: FlatButton(
-          color: Colors.white,
-          padding: EdgeInsets.all(10),
+        child: ElevatedButton(
           onPressed: () {
             // Navigator.pushNamed(context, "/");
             if (text == "Tekrar") {
@@ -683,8 +745,6 @@ class NewWidget extends StatelessWidget {
               );
             }
           },
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
           child: Column(
             //mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.start,

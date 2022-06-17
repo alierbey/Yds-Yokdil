@@ -241,7 +241,7 @@ class MenuWidget extends StatelessWidget {
                     children: [Text(currentMonthlyProduct.priceString)],
                   ),
                   actions: [
-                    RaisedButton(
+                    TextButton(
                         onPressed: () async {
                           // await makePurchases(offerings.current.monthly);
                         },
@@ -258,9 +258,13 @@ class MenuWidget extends StatelessWidget {
       child: Container(
         padding: EdgeInsets.symmetric(horizontal: 5),
         //margin: EdgeInsets.all(5),
-        child: FlatButton(
-          color: Colors.white,
-          padding: EdgeInsets.all(1),
+        child: ElevatedButton(
+          style: ButtonStyle(
+              backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
+              shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                  RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8.0),
+                      side: BorderSide(color: Colors.white)))),
           onPressed: () {
             if (!acikmi) {
               whSentenceGroup = int.parse(text) - 1;
@@ -301,7 +305,7 @@ class MenuWidget extends StatelessWidget {
                 AlertDialog alert = AlertDialog(
                   title: Text("Premium Üye Özelliği"),
                   content: Text(
-                      "Kilitli bölümleri açmak için premium üye olmalısınız. Premium üyelik sadece 15 tl dir."),
+                      "Kilitli bölümleri açmak için premium üye olmalısınız."),
                   actions: [
                     cancelButton,
                     continueButton,
@@ -320,7 +324,6 @@ class MenuWidget extends StatelessWidget {
               showAlertDialog(context);
             }
           },
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
@@ -354,7 +357,10 @@ class MenuWidget extends StatelessWidget {
                     child: Container(
                       child: Padding(
                           padding: const EdgeInsets.fromLTRB(20, 5, 10, 5),
-                          child: Icon(Icons.lock)),
+                          child: Icon(
+                            Icons.lock,
+                            color: Colors.amber,
+                          )),
                     ),
                   )
                 ],

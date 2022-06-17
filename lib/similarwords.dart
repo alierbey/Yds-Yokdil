@@ -170,7 +170,19 @@ class _SimilarWordsPageState extends State<SimilarWordsPage> {
                                     ),
                                     Padding(
                                       padding: const EdgeInsets.all(8.0),
-                                      child: FlatButton(
+                                      child: ElevatedButton(
+                                        style: ButtonStyle(
+                                            padding: MaterialStateProperty.all<
+                                                EdgeInsets>(EdgeInsets.all(10)),
+                                            backgroundColor:
+                                                MaterialStateProperty.all<
+                                                    Color>(Colors.white),
+                                            shape: MaterialStateProperty.all<
+                                                    RoundedRectangleBorder>(
+                                                RoundedRectangleBorder(
+                                                    borderRadius:
+                                                        BorderRadius.circular(12.0),
+                                                    side: BorderSide(color: Colors.white)))),
                                         onPressed: () {
                                           setState(() {
                                             _hangiCumle++;
@@ -180,11 +192,6 @@ class _SimilarWordsPageState extends State<SimilarWordsPage> {
                                             // }
                                           });
                                         },
-                                        padding: EdgeInsets.all(20),
-                                        shape: RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(10)),
-                                        color: Colors.white,
                                         child: Padding(
                                           padding: const EdgeInsets.all(8.0),
                                           child: Container(

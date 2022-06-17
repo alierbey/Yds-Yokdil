@@ -72,7 +72,7 @@ class _HomePageState extends State<HomePage> {
                   children: [Text(currentLifeTimeProduct.priceString)],
                 ),
                 actions: [
-                  RaisedButton(
+                  ElevatedButton(
                       onPressed: () async {
                         await makePurchases(offerings.current.lifetime);
                       },
@@ -354,9 +354,13 @@ class HomeMenuWidget extends StatelessWidget {
     return Container(
       height: screenHeight * 0.30,
       margin: EdgeInsets.all(5),
-      child: FlatButton(
-        color: Colors.white,
-        padding: EdgeInsets.all(10),
+      child: TextButton(
+        style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
+            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12.0),
+                    side: BorderSide(color: Colors.white)))),
         onPressed: () {
           if (menuSection == 0) {
             Navigator.push(
@@ -386,7 +390,6 @@ class HomeMenuWidget extends StatelessWidget {
             );
           }
         },
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
         child: Column(
           //mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -444,11 +447,16 @@ class HomeMenuWidgetYokdil extends StatelessWidget {
     var screenHeight = MediaQuery.of(context).size.height;
     var screenWidth = MediaQuery.of(context).size.width;
     return Container(
+      padding: EdgeInsets.all(3),
       height: screenHeight * 0.20,
-      margin: EdgeInsets.all(5),
-      child: FlatButton(
-        color: Colors.white,
-        padding: EdgeInsets.all(10),
+      margin: EdgeInsets.all(3),
+      child: TextButton(
+        style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
+            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12.0),
+                    side: BorderSide(color: Colors.white)))),
         onPressed: () {
           if (text == "Yökdil") {
             // Navigator.pushNamed(context, "/questionmain");
@@ -459,39 +467,40 @@ class HomeMenuWidgetYokdil extends StatelessWidget {
             );
           }
         },
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-        child: Column(
-          //mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Padding(padding: EdgeInsets.only(top: 0)),
-            Icon(menuIcon, size: 40, color: Colors.blueAccent),
-            // Image(
-            //   image: AssetImage("assets/images/menu1.png"),
-            // ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(5, 15, 10, 5),
-              child: Text(
-                text,
-                style: TextStyle(
-                    fontFamily: "Anton",
-                    fontWeight: FontWeight.w800,
-                    fontSize: 16,
-                    color: Colors.black),
+        child: Container(
+          child: Column(
+            //mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(padding: EdgeInsets.only(top: 0)),
+              Icon(menuIcon, size: 40, color: Colors.blueAccent),
+              // Image(
+              //   image: AssetImage("assets/images/menu1.png"),
+              // ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(5, 15, 10, 5),
+                child: Text(
+                  text,
+                  style: TextStyle(
+                      fontFamily: "Anton",
+                      fontWeight: FontWeight.w800,
+                      fontSize: 16,
+                      color: Colors.black),
+                ),
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(5, 1, 10, 5),
-              child: Text(
-                subText,
-                style: TextStyle(
-                    fontFamily: "Roboto",
-                    fontWeight: FontWeight.normal,
-                    fontSize: 12,
-                    color: Colors.grey),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(5, 1, 10, 5),
+                child: Text(
+                  subText,
+                  style: TextStyle(
+                      fontFamily: "Roboto",
+                      fontWeight: FontWeight.normal,
+                      fontSize: 12,
+                      color: Colors.grey),
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

@@ -230,7 +230,19 @@ class _WordState extends State<Word> {
                                     ),
                                     Padding(
                                       padding: const EdgeInsets.all(8.0),
-                                      child: FlatButton(
+                                      child: ElevatedButton(
+                                        style: ButtonStyle(
+                                            backgroundColor:
+                                                MaterialStateProperty.all<
+                                                    Color>(Colors.white),
+                                            shape: MaterialStateProperty.all<
+                                                    RoundedRectangleBorder>(
+                                                RoundedRectangleBorder(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            8.0),
+                                                    side: BorderSide(
+                                                        color: Colors.white)))),
                                         onPressed: () {
                                           setState(() {
                                             _hangiCumle++;
@@ -240,11 +252,6 @@ class _WordState extends State<Word> {
                                             }
                                           });
                                         },
-                                        padding: EdgeInsets.all(20),
-                                        shape: RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(10)),
-                                        color: Colors.white,
                                         child: Padding(
                                           padding: const EdgeInsets.all(8.0),
                                           child: Container(
@@ -390,9 +397,13 @@ class NewWidget extends StatelessWidget {
       child: Container(
         height: screenHeight * 0.32,
         padding: EdgeInsets.symmetric(horizontal: 10),
-        child: FlatButton(
-          color: Colors.white,
-          padding: EdgeInsets.all(10),
+        child: ElevatedButton(
+          style: ButtonStyle(
+              backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
+              shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                  RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12.0),
+                      side: BorderSide(color: Colors.white)))),
           onPressed: () {
             // Navigator.pushNamed(context, "/");
             if (text == "Tekrar") {
@@ -421,8 +432,6 @@ class NewWidget extends StatelessWidget {
               );
             }
           },
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [

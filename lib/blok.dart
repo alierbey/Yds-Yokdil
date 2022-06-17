@@ -240,8 +240,7 @@ class _BlokState extends State<Blok> {
                       children: [
                         Padding(
                           padding: const EdgeInsets.all(8.0),
-                          child: FlatButton(
-                            color: Colors.black12,
+                          child: ElevatedButton(
                             onPressed: () {
                               setState(() {
                                 translate = null;
@@ -259,9 +258,6 @@ class _BlokState extends State<Blok> {
                                 }
                               });
                             },
-                            padding: EdgeInsets.all(20),
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10)),
                             child: Row(
                               children: [
                                 Icon(Icons.arrow_left_outlined),
@@ -271,8 +267,7 @@ class _BlokState extends State<Blok> {
                         ),
                         Padding(
                           padding: const EdgeInsets.all(8.0),
-                          child: FlatButton(
-                            color: Colors.black12,
+                          child: ElevatedButton(
                             onPressed: () {
                               setState(() {
                                 translate = null;
@@ -289,9 +284,6 @@ class _BlokState extends State<Blok> {
                                 }
                               });
                             },
-                            padding: EdgeInsets.all(20),
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10)),
                             child: Row(
                               children: [
                                 Icon(Icons.arrow_right_outlined),
@@ -487,15 +479,12 @@ class _NextButtonState extends State<NextButton> {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
-      child: FlatButton(
-        color: Colors.black12,
+      child: ElevatedButton(
         onPressed: () {
           setState(() {
             yeniWidgetOlustur = true;
           });
         },
-        padding: EdgeInsets.all(20),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
         child: Row(
           children: [
             Icon(Icons.arrow_right_outlined),
