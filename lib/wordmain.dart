@@ -172,7 +172,7 @@ class _WordMainState extends State<WordMain> {
                 height: 30,
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 10),
+                padding: const EdgeInsets.all(10),
                 child: Text(
                   "Aşağıdaki kelime gruplarından birini seçebilirsiniz.",
                   textAlign: TextAlign.center,
@@ -254,125 +254,131 @@ class MenuWidget extends StatelessWidget {
 
     var screenHeight = MediaQuery.of(context).size.height;
     var screenWidth = MediaQuery.of(context).size.width;
-    return Padding(
-      padding: const EdgeInsets.only(top: 5.0),
-      child: Container(
-        padding: EdgeInsets.symmetric(horizontal: 5),
-        //margin: EdgeInsets.all(5),
-        child: ElevatedButton(
-          style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
-              shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                  RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(8.0),
-                      side: BorderSide(color: Colors.white)))),
-          onPressed: () {
-            if (!acikmi) {
-              whSentenceGroup = int.parse(text) - 1;
-              // Navigator.pushNamed(context, "/wordsmainsecond");
+    return Column(
+      children: [
+        Container(
+          //margin: EdgeInsets.all(5),
+          child: ElevatedButton(
+            style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
+                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8.0),
+                        side: BorderSide(color: Colors.white)))),
+            onPressed: () {
+              if (!acikmi) {
+                whSentenceGroup = int.parse(text) - 1;
+                // Navigator.pushNamed(context, "/wordsmainsecond");
 
-              Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => WordMainSecond(
-                          kelimeGrubu: whSentenceGroup, whSection: whSection)));
-              // Navigator.of(context).pushReplacement(MaterialPageRoute(
-              //     builder: (context) => WordMainSecond(
-              //         kelimeGrubu: whSentenceGroup, whSection: whSection)));
+                Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => WordMainSecond(
+                            kelimeGrubu: whSentenceGroup,
+                            whSection: whSection)));
+                // Navigator.of(context).pushReplacement(MaterialPageRoute(
+                //     builder: (context) => WordMainSecond(
+                //         kelimeGrubu: whSentenceGroup, whSection: whSection)));
 
-            } else {
-              print("premium degil");
+              } else {
+                print("premium degil");
 
-              showAlertDialog(BuildContext context) {
-                // set up the button
-                // set up the buttons
-                Widget cancelButton = TextButton(
-                  child: Text("Vazgeç"),
-                  onPressed: () {
-                    Navigator.of(context).pop();
-                  },
-                );
-                Widget continueButton = TextButton(
-                  child: Text("Premium Ol"),
-                  onPressed: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (context) => SatilAlPage(),
-                      ),
-                    );
+                showAlertDialog(BuildContext context) {
+                  // set up the button
+                  // set up the buttons
+                  Widget cancelButton = TextButton(
+                    child: Text("Vazgeç"),
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
+                  );
+                  Widget continueButton = TextButton(
+                    child: Text("Premium Ol"),
+                    onPressed: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => SatilAlPage(),
+                        ),
+                      );
 
-                    // ustSinif.ustSinif.showPaywall();
-                  },
-                );
+                      // ustSinif.ustSinif.showPaywall();
+                    },
+                  );
 
-                // set up the AlertDialog
-                AlertDialog alert = AlertDialog(
-                  title: Text("Premium Üye Özelliği"),
-                  content: Text(
-                      "Kilitli bölümleri açmak için premium üye olmalısınız."),
-                  actions: [
-                    cancelButton,
-                    continueButton,
-                  ],
-                );
+                  // set up the AlertDialog
+                  AlertDialog alert = AlertDialog(
+                    title: Text("Premium Üye Özelliği"),
+                    content: Text(
+                        "Kilitli bölümleri açmak için premium üye olmalısınız."),
+                    actions: [
+                      cancelButton,
+                      continueButton,
+                    ],
+                  );
 
-                // show the dialog
-                showDialog(
-                  context: context,
-                  builder: (BuildContext context) {
-                    return alert;
-                  },
-                );
+                  // show the dialog
+                  showDialog(
+                    context: context,
+                    builder: (BuildContext context) {
+                      return alert;
+                    },
+                  );
+                }
+
+                showAlertDialog(context);
               }
-
-              showAlertDialog(context);
-            }
-          },
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Padding(padding: EdgeInsets.only(top: 2)),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            },
+            child: Container(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Container(
-                    child: Padding(
-                      padding: const EdgeInsets.fromLTRB(20, 5, 10, 5),
-                      child: Text(
-                        text,
-                        style: TextStyle(
-                            fontFamily: "Anton",
-                            fontWeight: FontWeight.w800,
-                            fontSize: 20,
-                            color: Colors.grey),
+                  Padding(padding: EdgeInsets.only(top: 20)),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Container(
+                        child: Padding(
+                          padding: const EdgeInsets.fromLTRB(20, 5, 10, 5),
+                          child: Text(
+                            text,
+                            style: TextStyle(
+                                fontFamily: "Anton",
+                                fontWeight: FontWeight.w800,
+                                fontSize: 20,
+                                color: Colors.grey),
+                          ),
+                        ),
                       ),
-                    ),
+                      Visibility(
+                        visible: tamammi,
+                        child: Container(
+                          child: Padding(
+                              padding: const EdgeInsets.fromLTRB(20, 5, 10, 5),
+                              child: Icon(Icons.check)),
+                        ),
+                      ),
+                      Visibility(
+                        visible: acikmi,
+                        child: Container(
+                          child: Padding(
+                              padding: const EdgeInsets.fromLTRB(20, 5, 10, 5),
+                              child: Icon(
+                                Icons.lock,
+                                color: Colors.amber,
+                              )),
+                        ),
+                      )
+                    ],
                   ),
-                  Visibility(
-                    visible: tamammi,
-                    child: Container(
-                      child: Padding(
-                          padding: const EdgeInsets.fromLTRB(20, 5, 10, 5),
-                          child: Icon(Icons.check)),
-                    ),
-                  ),
-                  Visibility(
-                    visible: acikmi,
-                    child: Container(
-                      child: Padding(
-                          padding: const EdgeInsets.fromLTRB(20, 5, 10, 5),
-                          child: Icon(
-                            Icons.lock,
-                            color: Colors.amber,
-                          )),
-                    ),
-                  )
                 ],
               ),
-            ],
+            ),
           ),
         ),
-      ),
+        Text("."),
+        Text("."),
+        Text("."),
+      ],
     );
   }
 }

@@ -108,7 +108,7 @@ class _WordMainSecondState extends State<WordMainSecond> {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 10),
                 child: Text(
-                  "Aşağıdaki kelime gruplarından birini seçebilirsiniz.",
+                  "Kelimeleri öğrenmek için başlaya basınız.",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                       fontWeight: FontWeight.w800,
