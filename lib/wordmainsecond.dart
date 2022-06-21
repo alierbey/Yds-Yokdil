@@ -78,13 +78,14 @@ class _WordMainSecondState extends State<WordMainSecond> {
           icon: new Icon(
             Icons.arrow_back_ios,
           ),
-          onPressed: () => Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) => WordMain(
-                      whSection: 0,
-                    )),
-          ),
+          onPressed: () => Navigator.pop(context),
+          // onPressed: () => Navigator.push(
+          //   context,
+          //   MaterialPageRoute(
+          //       builder: (context) => WordMain(
+          //             whSection: 0,
+          //           )),
+          // ),
           color: Colors.black,
         ),
       ),

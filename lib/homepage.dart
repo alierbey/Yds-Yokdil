@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:yds_yokdil/blockmain.dart';
 import 'package:yds_yokdil/similarwords.dart';
+import 'package:yds_yokdil/word_bilgi.dart';
 import 'package:yds_yokdil/wordmain.dart';
 import 'package:yds_yokdil/yokdilmain.dart';
 import 'constant.dart';
@@ -366,9 +367,13 @@ class HomeMenuWidget extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                  builder: (context) => WordMain(
-                        whSection: 0,
-                      )),
+                // builder: (context) => WordMain(
+                //   whSection: 0,
+                // ),
+                builder: (context) => WordBilgiPage(
+                  whSection: 0,
+                ),
+              ),
             );
           } else if (menuSection == 1) {
             Navigator.push(
@@ -448,7 +453,7 @@ class HomeMenuWidgetYokdil extends StatelessWidget {
     var screenWidth = MediaQuery.of(context).size.width;
     return Container(
       padding: EdgeInsets.all(3),
-      height: screenHeight * 0.20,
+      height: screenHeight * 0.22,
       margin: EdgeInsets.all(3),
       child: TextButton(
         style: ButtonStyle(

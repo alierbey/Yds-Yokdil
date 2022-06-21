@@ -150,7 +150,8 @@ class _WordMainState extends State<WordMain> {
           icon: new Icon(
             Icons.arrow_back_ios,
           ),
-          onPressed: () => Navigator.pushNamed(context, "/homepage"),
+          // onPressed: () => Navigator.pushNamed(context, "/word_bilgi"),
+          onPressed: () => Navigator.pop(context),
           color: Colors.black,
         ),
       ),
@@ -295,7 +296,10 @@ class MenuWidget extends StatelessWidget {
                   child: Text("Premium Ol"),
                   onPressed: () {
                     Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context) => SatilAlPage()));
+                      MaterialPageRoute(
+                        builder: (context) => SatilAlPage(),
+                      ),
+                    );
 
                     // ustSinif.ustSinif.showPaywall();
                   },

@@ -106,12 +106,14 @@ class _WordState extends State<Word> {
           icon: new Icon(
             Icons.arrow_back_ios,
           ),
-          onPressed: () => Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(
-                  builder: (context) => WordMainSecond(
-                      kelimeGrubu: whSentenceGroup,
-                      whSection: widget.whSection))),
+          onPressed: () => Navigator.pop(context),
+          // onPressed: () => Navigator.pushReplacement(
+          //   context,
+          //   MaterialPageRoute(
+          //     builder: (context) => WordMainSecond(
+          //         kelimeGrubu: whSentenceGroup, whSection: widget.whSection),
+          //   ),
+          // ),
           color: Colors.black,
         ),
         backgroundColor: Color(0xffEEF3F7),

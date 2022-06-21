@@ -4,6 +4,7 @@ import 'package:yds_yokdil/blockmain.dart';
 import 'package:yds_yokdil/constant.dart';
 import 'package:yds_yokdil/eula.dart';
 import 'package:yds_yokdil/similarwords.dart';
+import 'package:yds_yokdil/word_bilgi.dart';
 import 'package:yds_yokdil/wordmainsecond.dart';
 import 'homepage.dart';
 import 'questions.dart';
@@ -39,6 +40,7 @@ void main() {
       "/balongame": (context) => BalonGame(),
       "/eula": (context) => EulaPage(),
       "/privacy": (context) => PrivacyPage(),
+      "/word_bilgi": (context) => WordBilgiPage(),
     },
   ));
 }
