@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yds_yokdil/words_internet.dart';
 import 'words.dart';
 import 'constant.dart';
 import 'dart:convert';
@@ -133,7 +134,7 @@ class _WordMainSecondState extends State<WordMainSecond> {
                         // Navigator.pushNamed(context, "/words");
 
                         Navigator.of(context).pushReplacement(MaterialPageRoute(
-                            builder: (context) => Word(
+                            builder: (context) => WordInternet(
                                 kelimeGrubu: whSentenceGroup,
                                 whSection: widget.whSection)));
                       },

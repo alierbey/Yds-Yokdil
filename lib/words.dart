@@ -8,6 +8,7 @@ import 'package:yds_yokdil/wordmain.dart';
 import 'package:yds_yokdil/wordmainsecond.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:text_to_speech/text_to_speech.dart';
+import 'package:http/http.dart' as http;
 
 class Word extends StatefulWidget {
   int kelimeGrubu;
@@ -79,6 +80,25 @@ class _WordState extends State<Word> {
     print("--> kelime tamamlama başarılı Kaydedildi " + i.toString());
   }
 
+  int uzunluk = 0;
+  bool isLoading = true;
+
+  Future<String> getInternetData() async {
+    print("get data");
+
+    String url = "http://localhost:8080/api/v1/words";
+
+    var response = await http.get(Uri.parse(url));
+    data = json.decode(response.body);
+
+    uzunluk = data.length;
+    print("Main.dart VeriSayısı : ${data.length}");
+
+    setState(() {
+      isLoading = false; //setting state to false after data loaded
+    });
+  }
+
   @override
   void initState() {
     setState(() {
@@ -87,6 +107,7 @@ class _WordState extends State<Word> {
       fonksiyon();
       randomList = shuffle(ids);
       print(randomList);
+      getInternetData();
     });
   }
 
