@@ -228,14 +228,6 @@ class _HomePageState extends State<HomePage> {
                       menuIcon: Icons.dashboard_customize,
                       text: "Yökdil",
                       subText: "Fen Bilimleri ",
-                      whSection: 1,
-                    ),
-                  ),
-                  Expanded(
-                    child: HomeMenuWidgetYokdil(
-                      menuIcon: Icons.dashboard_customize,
-                      text: "Yökdil",
-                      subText: "Sosyal Bilimler",
                       whSection: 2,
                     ),
                   ),
@@ -243,8 +235,16 @@ class _HomePageState extends State<HomePage> {
                     child: HomeMenuWidgetYokdil(
                       menuIcon: Icons.dashboard_customize,
                       text: "Yökdil",
-                      subText: "Sağlık Bilimleri",
+                      subText: "Sosyal Bilimler",
                       whSection: 3,
+                    ),
+                  ),
+                  Expanded(
+                    child: HomeMenuWidgetYokdil(
+                      menuIcon: Icons.dashboard_customize,
+                      text: "Yökdil",
+                      subText: "Sağlık Bilimleri",
+                      whSection: 4,
                     ),
                   ),
                 ],

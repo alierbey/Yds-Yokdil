@@ -9,7 +9,7 @@ class YokdilMainPage extends StatefulWidget {
   // 1 - Sosyal bilimler
   // 2 - Sağlık bilimleri
 
-  int whSection = 1;
+  int whSection = 2;
 
   YokdilMainPage({
     Key key,
@@ -28,11 +28,11 @@ class _YokdilMainPageState extends State<YokdilMainPage> {
 
     String whSectionString = "";
 
-    if (widget.whSection == 1)
+    if (widget.whSection == 2)
       whSectionString = "Fen Bilimleri";
-    else if (widget.whSection == 2)
+    else if (widget.whSection == 3)
       whSectionString = "Sosyal Bilimler";
-    else if (widget.whSection == 3) whSectionString = "Sağlık Bilimleri";
+    else if (widget.whSection == 4) whSectionString = "Sağlık Bilimleri";
     return Scaffold(
       appBar: AppBar(
         backgroundColor: defaultBackgroundColor,
