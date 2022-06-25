@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:yds_yokdil/blockmain.dart';
-import 'package:yds_yokdil/wordmain.dart';
+import 'package:yds_yokdil/word_2_list_grup.dart';
 import 'constant.dart';
 import 'questionmain.dart';
 
@@ -139,7 +139,7 @@ class HomeMenuWidget extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => WordMain(
+                builder: (context) => WordListGrup(
                   whSection: whSection,
                 ),
               ),

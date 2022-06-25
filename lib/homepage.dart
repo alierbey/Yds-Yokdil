@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:yds_yokdil/blockmain.dart';
 import 'package:yds_yokdil/similarwords.dart';
-import 'package:yds_yokdil/word_bilgi.dart';
-import 'package:yds_yokdil/wordmain.dart';
+import 'package:yds_yokdil/word_1_page_info.dart';
 import 'package:yds_yokdil/yokdilmain.dart';
 import 'constant.dart';
 import 'questionmain.dart';
@@ -370,8 +369,8 @@ class HomeMenuWidget extends StatelessWidget {
                 // builder: (context) => WordMain(
                 //   whSection: 0,
                 // ),
-                builder: (context) => WordBilgiPage(
-                  whSection: 0,
+                builder: (context) => WordPageInfo(
+                  whSection: 1,
                 ),
               ),
             );

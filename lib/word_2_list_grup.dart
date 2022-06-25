@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:yds_yokdil/wordmainsecond.dart';
+import 'package:yds_yokdil/word_3_list_section.dart';
 import 'package:flutter/services.dart';
 import 'words.dart';
 import 'constant.dart';
@@ -8,19 +8,20 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
 import 'dart:io' show Platform;
 import 'satinal.dart';
+import 'package:http/http.dart' as http;
 
-class WordMain extends StatefulWidget {
+class WordListGrup extends StatefulWidget {
   int whSection = 0;
-  WordMain({
+  WordListGrup({
     Key key,
     @required this.whSection,
   }) : super(key: key);
 
   @override
-  _WordMainState createState() => _WordMainState();
+  _WordListGrupState createState() => _WordListGrupState();
 }
 
-class _WordMainState extends State<WordMain> {
+class _WordListGrupState extends State<WordListGrup> {
   PurchaserInfo purchaserInfo;
 
   Future<void> initPlatformState() async {
@@ -102,6 +103,30 @@ class _WordMainState extends State<WordMain> {
     }
   }
 
+  int uzunluk = 0;
+  bool isLoading = true;
+  List<dynamic> data;
+
+  Future<String> getInternetData() async {
+    print("get data");
+
+    String url = "http://localhost:8080/api/v1/words/category/" +
+        widget.whSection.toString();
+
+    var response = await http.get(Uri.parse(url));
+    data = json.decode(response.body);
+    if (data != null) {
+      uzunluk = data.length;
+      print("Main.dart VeriSayısı : ${data.length}");
+    }
+
+    setState(() {
+      isLoading = false; //setting state to false after data loaded
+
+      MenuSayisi = (uzunluk / 15).toInt();
+    });
+  }
+
   bool kontrol(i) {
     if (tamamlandi == null) {
       return false;
@@ -127,10 +152,11 @@ class _WordMainState extends State<WordMain> {
   void initState() {
     super.initState();
     print(widget.whSection);
-    print("wordmainde");
+    print("WordListGrupde");
     _veriOku();
     _veriKaydet();
-    getData();
+    // getData();
+    getInternetData();
   }
 
   @override
@@ -273,7 +299,7 @@ class MenuWidget extends StatelessWidget {
                 Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => WordMainSecond(
+                        builder: (context) => WordListSection(
                             kelimeGrubu: whSentenceGroup,
                             whSection: whSection)));
                 // Navigator.of(context).pushReplacement(MaterialPageRoute(

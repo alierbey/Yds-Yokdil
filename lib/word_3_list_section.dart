@@ -1,31 +1,62 @@
 import 'package:flutter/material.dart';
-import 'package:yds_yokdil/words_internet.dart';
+import 'package:yds_yokdil/word_4_internet.dart';
 import 'words.dart';
 import 'constant.dart';
 import 'dart:convert';
-import 'wordmain.dart';
+import 'package:http/http.dart' as http;
 
-class WordMainSecond extends StatefulWidget {
+class WordListSection extends StatefulWidget {
   int kelimeGrubu;
   int whSection;
-  WordMainSecond({
+  WordListSection({
     Key key,
     @required this.kelimeGrubu,
     @required this.whSection,
   }) : super(key: key);
   @override
-  _WordMainSecondState createState() => _WordMainSecondState();
+  _WordListSectionState createState() => _WordListSectionState();
 }
 
-class _WordMainSecondState extends State<WordMainSecond> {
+class _WordListSectionState extends State<WordListSection> {
   var jsonResult;
 
   List sentence;
+  List wordList;
 
   List<int> text = [1, 2, 3, 4];
 
   // List<String> onlyword = [];
   List<String> kelimeler = [];
+
+  int uzunluk = 0;
+  bool isLoading = true;
+  List<dynamic> data;
+
+  Future<String> getInternetData() async {
+    print("get data");
+
+    String url = "http://localhost:8080/api/v1/words/category/" +
+        widget.whSection.toString();
+
+    var response = await http.get(Uri.parse(url));
+    data = json.decode(response.body);
+    if (data != null) {
+      uzunluk = data.length;
+      print("Main.dart VeriSayısı : ${data.length}");
+
+      //wordList = data[2];
+      print(data[0]["word"]);
+
+      for (var i = widget.kelimeGrubu * 15;
+          i < widget.kelimeGrubu * 15 + 15;
+          i++) {
+        kelimeler.add(data[i]["word"]);
+      }
+    }
+    setState(() {
+      isLoading = false; //setting state to false after data loaded
+    });
+  }
 
   Future<void> getData() async {
     try {
@@ -60,7 +91,8 @@ class _WordMainSecondState extends State<WordMainSecond> {
   void initState() {
     super.initState();
 
-    getData();
+    // getData();
+    getInternetData();
   }
 
   @override

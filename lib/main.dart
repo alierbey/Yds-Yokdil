@@ -4,12 +4,13 @@ import 'package:yds_yokdil/blockmain.dart';
 import 'package:yds_yokdil/constant.dart';
 import 'package:yds_yokdil/eula.dart';
 import 'package:yds_yokdil/similarwords.dart';
-import 'package:yds_yokdil/word_bilgi.dart';
-import 'package:yds_yokdil/wordmainsecond.dart';
+import 'package:yds_yokdil/word_1_page_info.dart';
+import 'package:yds_yokdil/word_2_list_grup.dart';
+import 'package:yds_yokdil/word_3_list_section.dart';
+import 'package:yds_yokdil/word_4_internet.dart';
 import 'homepage.dart';
 import 'questions.dart';
 import 'questionmain.dart';
-import 'wordmain.dart';
 import 'words.dart';
 import 'block.dart';
 import 'splash.dart';
@@ -31,16 +32,18 @@ void main() {
       "/homepage": (context) => HomePage(),
       "/questions": (context) => Question(),
       "/questionmain": (context) => OuestionMain(),
-      "/wordmain": (context) => WordMain(),
-      "/words": (context) => Word(),
       "/block": (context) => Block(),
       "/blockmain": (context) => BlockMain(),
-      "/wordsmainsecond": (context) => WordMainSecond(),
       "/similarword": (context) => SimilarWordsPage(),
       "/balongame": (context) => BalonGame(),
       "/eula": (context) => EulaPage(),
       "/privacy": (context) => PrivacyPage(),
-      "/word_bilgi": (context) => WordBilgiPage(),
+
+// word pages
+      "/word_page_info": (context) => WordPageInfo(),
+      "/word_list_grup": (context) => WordListGrup(),
+      "/word_list_section": (context) => WordListSection(),
+      "/word_internet": (context) => WordInternet(),
     },
   ));
 }

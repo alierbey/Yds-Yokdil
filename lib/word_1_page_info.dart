@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:yds_yokdil/blockmain.dart';
 import 'package:yds_yokdil/satinal.dart';
-import 'package:yds_yokdil/wordmain.dart';
+import 'package:yds_yokdil/word_2_list_grup.dart';
 import 'constant.dart';
 import 'questionmain.dart';
 
-class WordBilgiPage extends StatefulWidget {
-  int whSection = 0;
+class WordPageInfo extends StatefulWidget {
+  int whSection = 1;
 
-  WordBilgiPage({
+  WordPageInfo({
     Key key,
     @required this.whSection,
   }) : super(key: key);
 
   @override
-  State<WordBilgiPage> createState() => _WordBilgiPageState();
+  State<WordPageInfo> createState() => _WordPageInfoState();
 }
 
-class _WordBilgiPageState extends State<WordBilgiPage> {
+class _WordPageInfoState extends State<WordPageInfo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -141,7 +141,7 @@ class HomeMenuWidget extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => WordMain(
+                builder: (context) => WordListGrup(
                   whSection: whSection,
                 ),
               ),

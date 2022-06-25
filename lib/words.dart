@@ -4,8 +4,8 @@ import 'package:yds_yokdil/constant.dart';
 import 'dart:math';
 import 'dart:convert';
 import 'package:yds_yokdil/homepage.dart';
-import 'package:yds_yokdil/wordmain.dart';
-import 'package:yds_yokdil/wordmainsecond.dart';
+
+import 'package:yds_yokdil/word_3_list_section.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:text_to_speech/text_to_speech.dart';
 import 'package:http/http.dart' as http;
@@ -435,7 +435,7 @@ class NewWidget extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => WordMain(
+                    builder: (context) => WordListSection(
                           whSection: 0,
                         )),
               );
