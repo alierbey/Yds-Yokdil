@@ -86,7 +86,7 @@ class _WordState extends State<Word> {
   Future<String> getInternetData() async {
     print("get data");
 
-    String url = "http://localhost:8080/api/v1/words";
+    String url = urlGlobal + "words";
 
     var response = await http.get(Uri.parse(url));
     data = json.decode(response.body);

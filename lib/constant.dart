@@ -9,3 +9,6 @@ const double beyHorizontalPadding = 20.0;
 bool premiumUye = false;
 
 bool sesAcikMi = true;
+
+// String urlGlobal = "http://localhost:8080/api/v1/";
+String urlGlobal = "http://ydsyokdilsinavi.com/api/v1/";

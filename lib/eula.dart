@@ -11,7 +11,7 @@ class EulaPage extends StatelessWidget {
         title: Text("Eula - Sözleşme"),
       ),
       body: WebView(
-        initialUrl: 'https://alierbey.com/yds-yokdil-icin-eula/',
+        initialUrl: 'https://ydsyokdilsinavi.com/eula',
         javascriptMode: JavascriptMode.unrestricted,
       ),
     );

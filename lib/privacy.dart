@@ -11,7 +11,7 @@ class PrivacyPage extends StatelessWidget {
         title: Text("Privacy - Gizlilik"),
       ),
       body: WebView(
-        initialUrl: 'https://alierbey.com/gizlilik-kosullari/',
+        initialUrl: 'https://ydsyokdilsinavi.com/privacy',
         javascriptMode: JavascriptMode.unrestricted,
       ),
     );

@@ -87,10 +87,10 @@ class _WordInternetState extends State<WordInternet> {
   Future<String> getInternetData() async {
     print("get data");
 
-    String url = "http://localhost:8080/api/v1/words";
+    String url = urlGlobal + "words/category/" + widget.whSection.toString();
 
     var response = await http.get(Uri.parse(url));
-    data = json.decode(response.body);
+    data = json.decode(utf8.decode(response.bodyBytes));
 
     uzunluk = data.length;
     print("Main.dart VeriSayısı : ${data.length}");

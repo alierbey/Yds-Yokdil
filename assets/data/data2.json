@@ -81,7 +81,7 @@
             "sentence": ""
         },
         {
-            "question": "drug (n)",
+            "question": "drug(n)",
             "answers": "ilaç | uyuşturucu",
             "sentence": ""
         },
@@ -235,7 +235,6 @@
             "answers": "uzlaşmak",
             "sentence": ""
         },
-       
         {
             "question": "adapt",
             "answers": "uyum sağlamak",
@@ -491,7 +490,5 @@
             "answers": "şekil",
             "sentence": ""
         }
-       
-        
     ]
 }

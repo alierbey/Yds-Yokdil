@@ -1,8 +1,6 @@
 {
-    "questions": [{
-     
-
-        
+    "questions": [
+        {
             "question": "To intake",
             "answers": "almak, içeri almak ",
             "sentence": ""
@@ -93,9 +91,6 @@
             "sentence": ""
         },
         {
-     
-
-        
             "question": "Antigen ",
             "answers": "antijen ",
             "sentence": ""
@@ -1420,6 +1415,5 @@
             "answers": "acil, çok ciddi",
             "sentence": ""
         }
-        
     ]
 }

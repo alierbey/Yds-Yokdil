@@ -35,8 +35,7 @@ class _WordListSectionState extends State<WordListSection> {
   Future<String> getInternetData() async {
     print("get data");
 
-    String url = "http://localhost:8080/api/v1/words/category/" +
-        widget.whSection.toString();
+    String url = urlGlobal + "words/category/" + widget.whSection.toString();
 
     var response = await http.get(Uri.parse(url));
     data = json.decode(response.body);
