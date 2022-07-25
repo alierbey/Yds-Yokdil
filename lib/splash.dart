@@ -35,9 +35,7 @@ class _SplashPageState extends State<SplashPage> with TickerProviderStateMixin {
     animation1 = Tween<double>(begin: 0, end: 40).animate(
         new CurvedAnimation(parent: controller1, curve: Curves.bounceOut))
       ..addListener(() {
-        setState(() {
-          print("yeap");
-        });
+        setState(() {});
       });
 
     controller1.forward();

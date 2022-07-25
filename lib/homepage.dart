@@ -7,7 +7,7 @@ import 'package:yds_yokdil/yokdilmain.dart';
 import 'constant.dart';
 import 'questionmain.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
-import 'dart:io' show Platform;
+import 'dart:io' show Platform, sleep;
 import 'satinal.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -23,6 +23,7 @@ class _HomePageState extends State<HomePage> {
 
   IconData iconum = Icons.volume_up;
 
+// this function icon statue is change according to volume statue
   void sesDurumuDegistir() {
     print("icon değişmesi lazım");
     setState(() {
@@ -42,18 +43,24 @@ class _HomePageState extends State<HomePage> {
   }
 
   Future<void> initPlatformState() async {
-    await Purchases.setDebugLogsEnabled(true);
+    debugPrint("user id lazım");
+    // await Purchases.setDebugLogsEnabled(true);
+    // await Purchases.setup("appl_HKMOsgBnRRykUfiWIMhBDMcqsHY",
+    //     appUserId: "\$RCAnonymousID:f0622e385819447cae23c115bb7c90aa");
     await Purchases.setup("appl_HKMOsgBnRRykUfiWIMhBDMcqsHY");
     purchaserInfo = await Purchases.getPurchaserInfo();
+
     print("purchaserInfo $purchaserInfo");
     userIsPremium();
     premiumKontrol();
   }
 
   Future<bool> userIsPremium() async {
-    purchaserInfo = await Purchases.getPurchaserInfo();
-    return purchaserInfo.entitlements.all["premium"] != null &&
-        purchaserInfo.entitlements.all["premium"].isActive;
+    // return purchaserInfo.entitlements.all["premium"] != null &&
+    //     purchaserInfo.entitlements.all["premium"].isActive;
+
+    return purchaserInfo.entitlements.all["apple yıllık üyelik"] != null &&
+        purchaserInfo.entitlements.all["apple yıllık üyelik"].isActive;
   }
 
   Future<void> showPaywall() async {
@@ -97,9 +104,12 @@ class _HomePageState extends State<HomePage> {
   }
 
   void premiumKontrol() async {
+    sleep(Duration(seconds: 5));
+
     print("init state ici");
     print(await userIsPremium());
     premiumUye = await userIsPremium();
+    debugPrint("Premium Uye Durumu : $premiumUye");
     // premiumUye = true;
     print("init state ici");
   }
