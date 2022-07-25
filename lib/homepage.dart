@@ -64,10 +64,8 @@ class _HomePageState extends State<HomePage> {
   }
 
   Future<void> showPaywall() async {
-    print("satın alma işlemi başlatıldı>>");
     Offerings offerings = await Purchases.getOfferings();
     if (offerings.current != null) {
-      print("icerdeyim");
       // final currentMonthlyProduct = offerings.current.monthly.product;
       final currentLifeTimeProduct = offerings.current.lifetime.product;
 

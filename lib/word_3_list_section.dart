@@ -33,19 +33,13 @@ class _WordListSectionState extends State<WordListSection> {
   List<dynamic> data;
 
   Future<String> getInternetData() async {
-    print("get data");
-
     String url = urlGlobal + "words/category/" + widget.whSection.toString();
-
     var response = await http.get(Uri.parse(url));
     data = json.decode(response.body);
     if (data != null) {
       uzunluk = data.length;
-      print("Main.dart VeriSayısı : ${data.length}");
-
       //wordList = data[2];
-      print(data[0]["word"]);
-
+      // print(data[0]["word"]);
       for (var i = widget.kelimeGrubu * 15;
           i < widget.kelimeGrubu * 15 + 15;
           i++) {
